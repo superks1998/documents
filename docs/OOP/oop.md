@@ -1,8 +1,5 @@
----
-sidebar_position: 6
----
 
-# Lập trình hướng đối tượng (OOP)
+# OOP
 
 ## 4 tính chất
 
