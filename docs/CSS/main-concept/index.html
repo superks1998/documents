@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-CSS/main-concept" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">Main Concept | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/documents/docs/CSS/main-concept"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Main Concept | My Site"><meta data-rh="true" name="description" content="CSS"><meta data-rh="true" property="og:description" content="CSS"><link data-rh="true" rel="icon" href="/documents/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/documents/docs/CSS/main-concept"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/docs/CSS/main-concept" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/docs/CSS/main-concept" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/documents/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/documents/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/documents/assets/css/styles.1c022e41.css">
+<script src="/documents/assets/js/runtime~main.bb3d627c.js" defer="defer"></script>
+<script src="/documents/assets/js/main.ad72ae9f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documents/"><div class="navbar__logo"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/documents/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/documents/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documents/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/documents/docs/CSS/">CSS</a><button aria-label="Collapse sidebar category &#x27;CSS&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/documents/docs/CSS/main-concept">Main Concept</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/docs/Git/">Git</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documents/docs/HTML/main-concept">HTML</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documents/docs/Javascript/Advanced/closure">Javascript</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documents/docs/Network/Concept">Network</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/docs/OOP/">OOP</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documents/docs/ReactJS/basic">ReactJS</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documents/docs/Typescript/Basic">Typescript</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documents/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/documents/docs/CSS/"><span itemprop="name">CSS</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Main Concept</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Main Concept</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css">CSS<a href="#css" class="hash-link" aria-label="Direct link to CSS" title="Direct link to CSS">​</a></h2>
+<ul>
+<li><strong>Concept</strong>:<!-- -->
+<ul>
+<li>CSS (Cascading Style Sheets) là ngôn ngữ dùng đ  ể định kiểu cho tài liệu HTML.</li>
+<li>CSS giúp tách biệt nội dung và giao diện của trang web, dễ dàng điều chỉnh giao diện mà không cần thay đổi HTML.</li>
+<li>CSS được sử dụng để quy định màu sắc, bố cục, font chữ, và các yếu tố thiết kế khác cho trang web.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to">How to<a href="#how-to" class="hash-link" aria-label="Direct link to How to" title="Direct link to How to">​</a></h2>
+<ul>
+<li>Có 3 cách để sử dụng CSS trong website:<!-- -->
+<ul>
+<li><code>Inline CSS</code>: Áp dụng trực tiếp lên phần tử HTML bằng thuộc tính <code>style</code>.<!-- -->
+<ul>
+<li><strong>Pros and Cons</strong>: Nhanh chóng áp dụng các thay đổi nhỏ nhưng khó bảo trì khi có nhiều phần tử cần định kiểu.</li>
+</ul>
+</li>
+<li><code>Internal CSS</code>: Đặt trong thẻ style bên trong thẻ head của tài liệu HTML.<!-- -->
+<ul>
+<li><strong>Pros and Cons</strong>: Dễ quản lý trong một trang đơn lẻ nhưng không tối ưu cho nhiều trang.</li>
+</ul>
+</li>
+<li><code>External CSS</code>: Sử dụng tệp CSS riêng biệt và liên kết với tài liệu HTML bằng thẻ link bên trong thẻ head.<!-- -->
+<ul>
+<li><strong>Pros and Cons</strong>: Tốt nhất để quản lý và tái sử dụng, phù hợp cho các dự án lớn.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css-syntax">CSS Syntax<a href="#css-syntax" class="hash-link" aria-label="Direct link to CSS Syntax" title="Direct link to CSS Syntax">​</a></h2>
+<ul>
+<li><strong>Selector (Bộ Chọn):</strong> Chọn phần tử HTML để áp dụng các kiểu.</li>
+<li><strong>Declaration Block (Khối Khai Báo):</strong> Được bao trong <code>{}</code>, chứa các thuộc tính và giá trị để định kiểu cho phần tử.</li>
+</ul>
+<p><img loading="lazy" alt="CSS Syntax" src="/documents/assets/images/css-syntax-cfbba1a02f90b574d29469b597f7ce5e.jpg" width="760" height="240" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css-selector">CSS Selector<a href="#css-selector" class="hash-link" aria-label="Direct link to CSS Selector" title="Direct link to CSS Selector">​</a></h2>
+<ul>
+<li><strong>Concept</strong>:<!-- -->
+<ul>
+<li><code>CSS Selector</code> là một phần của cú pháp CSS được sử dụng để &quot;chọn&quot; các phần tử HTML mà bạn muốn áp dụng kiểu dáng (styles).</li>
+<li>Selector giúp xác định những phần tử nào trong tài liệu HTML sẽ được áp dụng quy tắc CSS tương ứng.</li>
+</ul>
+</li>
+<li><strong>Types of Selectors:</strong>
+<ul>
+<li><code>Universal Selector</code>():<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn tất cả các phần tử trên trang.</li>
+<li><strong>Syntax</strong>: Ký hiệu bằng dấu <code>*</code>.<!-- -->
+<ul>
+<li><code>VD</code>: * { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Type Selector (Element Selector)</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn tất cả các phần tử HTML thuộc một loại nhất định.</li>
+<li><strong>Syntax</strong>: Sử dụng tên thẻ HTML để áp dụng quy tắc CSS.<!-- -->
+<ul>
+<li><code>VD</code>: a { css }, p { css }, h { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Class Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn các phần tử HTML dựa trên giá trị của thuộc tính class của thẻ HTML.</li>
+<li><strong>Syntax</strong>: Bắt đầu bằng dấu chấm <code>.</code> + <code>tên class</code>.<!-- -->
+<ul>
+<li><code>VD</code>: .container { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ID Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn phần tử HTML có thuộc tính <code>id</code> cụ thể.</li>
+<li><strong>Syntax</strong>: Bắt đầu bằng dấu <code>#</code>+ <code>tên ID</code>.<!-- -->
+<ul>
+<li><code>VD</code>: #main-header { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Attribute Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn phần tử HTML dựa trên thuộc tính(attribute) và giá trị(optional) của thuộc tính đó.</li>
+<li><strong>Syntax</strong>:<!-- -->
+<ul>
+<li><code>[attribute]</code>: Chọn phần tử HTML có thuộc tính bất kể giá trị.</li>
+<li><code>[attribute=&quot;value&quot;]</code>: Chọn phần tử HTML có thuộc tính với giá trị chính xác.</li>
+<li><code>[attribute~=&quot;value&quot;]</code>: Chọn phần tử HTML có thuộc tính chứa giá trị trong một danh sách giá trị phân tách bằng dấu cách.</li>
+<li><code>[attribute^=&quot;value&quot;]</code>: Chọn phần tử HTML có giá trị thuộc tính bắt đầu bằng một giá trị cụ thể.</li>
+<li><code>[attribute$=&quot;value&quot;]</code>: Chọn phần tử HTML có giá trị thuộc tính kết thúc bằng một giá trị cụ thể.</li>
+<li><code>[attribute*=&quot;value&quot;]</code>: Chọn phần tử HTML có giá trị thuộc tính chứa giá trị cụ thể ở bất kỳ đâu.<!-- -->
+<ul>
+<li><code>VD</code>: a[target] { css }, a[target=&quot;_blank&quot;] { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+<li><code>Group Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn nhiều phần tử HTML cùng lúc bằng cách nhóm các selector lại với nhau.</li>
+<li><strong>Syntax</strong>: Sử dụng dấu phẩy, giữa các selector.<!-- -->
+<ul>
+<li><code>VD</code>: h1, h2, h3 { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Pseudo-Class Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn phần tử HTML dựa trên trạng thái đặc biệt của phần tử (ví dụ: khi hover chuột hoặc khi phần tử là con đầu tiên).</li>
+<li><strong>Syntax</strong>: Sử dụng dấu hai chấm <code>:</code> trước tên của pseudo-class.<!-- -->
+<ul>
+<li><code>VD</code>: a<!-- -->:hover<!-- --> { css }, input<!-- -->:focus<!-- --> { css }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Pseudo-Element Selector</code>:<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn một phần của phần tử HTML, chẳng hạn như chữ cái đầu tiên hoặc nội dung trước/ sau phần tử.</li>
+<li><strong>Syntax</strong>: Sử dụng dấu hai chấm <code>::</code> trước tên của pseudo-element.<!-- -->
+<ul>
+<li><code>VD</code>: p::first-letter { css }, div::after { css }<!-- -->
+<ul>
+<li><strong>Explanation</strong>: chọn chữ cái đầu tiên của đoạn văn p và và chọn vào nội dung sau của thẻ div.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css-combinators">CSS Combinators<a href="#css-combinators" class="hash-link" aria-label="Direct link to CSS Combinators" title="Direct link to CSS Combinators">​</a></h2>
+<ul>
+<li><strong>Concept</strong>:<!-- -->
+<ul>
+<li>CSS Combinators là khái niệm bộ chọn kết hợp của CSS, kết hợp các selector để chọn phần tử dựa trên mối quan hệ giữa các phần tử.</li>
+</ul>
+</li>
+<li><strong>Types of Combinators</strong>:<!-- -->
+<ul>
+<li><code>Descendant Combinator</code> (Kết hợp phân cấp):<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn tất cả các phần tử con của phần tử tổ tiên.</li>
+<li><strong>Syntax</strong>: Ký hiệu bằng khoảng trắng <code>space</code> giữa hai selector.<!-- -->
+<ul>
+<li>VD: div p { css }<!-- -->
+<ul>
+<li><strong>Explanation</strong>: Chọn tất cả các thẻ p nằm bên trong bất kỳ thẻ div nào, không quan trọng bao nhiêu cấp độ lồng nhau.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Child Combinator</code> (Kết hợp con trực tiếp):<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn tất cả các phần tử là con trực tiếp của phần tử cha.</li>
+<li><strong>Syntax</strong>: Ký hiệu bằng dấu <code>&gt;</code> giữa hai selector.<!-- -->
+<ul>
+<li>VD: div &gt; p { css }<!-- -->
+<ul>
+<li><strong>Explanation</strong>: Chọn tất cả các thẻ p là con trực tiếp của thẻ div, không bao gồm các phần tử con lồng sâu hơn.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Adjacent Sibling Combinator</code> (Kết hợp anh em liền kề):<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn phần tử ngay sau một phần tử khác, là anh em trực tiếp của nó.</li>
+<li><strong>Syntax</strong>: Ký hiệu bằng dấu <code>+</code> giữa hai selector.<!-- -->
+<ul>
+<li>VD: h1 + p { css }<!-- -->
+<ul>
+<li><strong>Explanation</strong>: Chọn thẻ p đầu tiên ngay sau thẻ h1 và áp dụng quy tắc CSS cho nó.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>General Sibling Combinator</code> (Kết hợp anh em tổng quát):<!-- -->
+<ul>
+<li><strong>Concept</strong>: Chọn tất cả các phần tử anh em của một phần tử khác, không nhất thiết phải liền kề.</li>
+<li><strong>Syntax</strong>: Ký hiệu bằng dấu <code>~</code> giữa hai selector.<!-- -->
+<ul>
+<li>VD: h1 ~ p { css }<!-- -->
+<ul>
+<li><strong>Explanation</strong>: Chọn tất cả các thẻ p là anh em (cùng cấp) với thẻ h1 và áp dụng quy tắc CSS cho chúng.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css-unit">CSS Unit<a href="#css-unit" class="hash-link" aria-label="Direct link to CSS Unit" title="Direct link to CSS Unit">​</a></h2>
+<ul>
+<li>
+<p><code>Absolute Units</code>:</p>
+<ul>
+<li><strong>Concept</strong>: Absolute Units(đơn vị tuyệt đối) xác định kích thước cụ thể, không phụ thuộc vào môi trường xung quanh.</li>
+<li><strong>Các đơn vị phổ biến</strong>:<!-- -->
+<ul>
+<li><code>px (pixels)</code>: 1 đơn vị điểm ảnh (pixel) trên màn hình.</li>
+<li><code>cm (centimeters)</code>: 1 đơn vị là 1 cm.</li>
+<li><code>mm (millimeters)</code>: 1 đơn vị là 1 mm.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Relative Units</code>:</p>
+<ul>
+<li>
+<p><strong>Concept</strong>: Relative Units(đơn vị tương đối) dựa trên các yếu tố khác (như kích thước font chữ hoặc viewport).</p>
+</li>
+<li>
+<p><strong>Các đơn vị phổ biến</strong>:</p>
+<ul>
+<li>
+<p><code>em</code>:</p>
+<ul>
+<li>
+<p><strong>Concept</strong>:</p>
+<ul>
+<li><code>em</code> là một đơn vị tương đối dựa trên kích thước font của phần tử cha gần nhất.</li>
+<li>Có thể bị lồng và ảnh hưởng bởi các phần tử cha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ưu điểm</strong>: Linh hoạt trong các thiết kế phụ thuộc vào cha.</p>
+</li>
+<li>
+<p><strong>Nhược điểm</strong>: Có thể dẫn đến hiện tượng kích thước phóng đại.</p>
+<ul>
+<li>
+<p>VD về nhược điểm của <code>em</code>:</p>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector class" style="color:#00009f">.parent</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">font-size</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">20</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Cha có font-size là 20px */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector class" style="color:#00009f">.child</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">font-size</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1.5</span><span class="token unit">em</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Con có font-size là 1.5 lần cha (20px * 1.5 = 30px) */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector class" style="color:#00009f">.grandchild</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">font-size</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token unit">em</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Cháu có font-size là 2 lần của cha (30px * 2 = 60px) */</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>rem</code>:</p>
+<ul>
+<li><strong>Concept</strong>:<!-- -->
+<ul>
+<li><code>rem</code> là một đơn vị tương đối dựa trên kích thước font của phần tử gốc(thẻ html).</li>
+</ul>
+</li>
+<li><strong>Ưu điểm</strong>: Ổn định và dễ dự đoán trong toàn bộ tài liệu, không bị lồng như <code>em</code>.</li>
+<li><strong>Nhược điểm</strong>: Không linh hoạt như em khi muốn thay đổi theo cha.</li>
+</ul>
+</li>
+<li>
+<p><code>%</code>: Dựa trên kích thước của phần tử cha.</p>
+</li>
+<li>
+<p><code>vw</code>: 1 đơn vị bằng 1% chiều rộng của viewport (khung nhìn).</p>
+</li>
+<li>
+<p><code>vh</code>: 1 đơn vị bằng 1% chiều cao của viewport.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Time Units</code>:</p>
+<ul>
+<li><strong>Concept</strong>: Time Units(đơn vị đo thời gian) trong CSS thường được dùng cho các hiệu ứng(animation).</li>
+<li><strong>Các đơn vị phổ biến</strong>:<!-- -->
+<ul>
+<li><code>s</code>: Giây.</li>
+<li><code>ms</code>: Mili giây (1 giây = 1000 mili giây).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Angle Units</code>:</p>
+<ul>
+<li><strong>Concept</strong>: Angle Units(đơn vị đo góc) thường được sử dụng cho các thuộc tính xoay góc(transform).</li>
+<li><strong>Các đơn vị phổ biến</strong>:<!-- -->
+<ul>
+<li><code>deg</code>: Độ (360 độ là một vòng tròn hoàn chỉnh).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="css-cascade">CSS Cascade<a href="#css-cascade" class="hash-link" aria-label="Direct link to CSS Cascade" title="Direct link to CSS Cascade">​</a></h2>
+<ul>
+<li>
+<p><strong>Concept</strong>:</p>
+<ul>
+<li>CSS cho phép nhiều style được áp dụng cho một phần tử.</li>
+<li>Cascade (thác đổ) là một cơ chế mà trình duyệt sử dụng để quyết định CSS nào sẽ được áp dụng khi có nhiều quy tắc xung đột với nhau, dựa trên thứ tự và mức độ ưu tiên của các quy tắc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Origin</strong>:</p>
+<ul>
+<li><code>Có 3 loại</code>:<!-- -->
+<ul>
+<li><strong>Author styles</strong>: Kiểu do developer định nghĩa (Ưu tiên cao nhất).</li>
+<li><strong>User styles</strong>: Kiểu do người dùng định nghĩa (VD: tùy chỉnh trực tiếp trên trình duyệt).</li>
+<li><strong>User Agent Stylesheets (Trình duyệt)</strong>: Kiểu mặc định của trình duyệt (Ưu tiên thấp nhất).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Specificity</strong>:</p>
+<ul>
+<li>
+<p><code>Thứ tự tính điểm</code>:</p>
+<ul>
+<li><strong>Inline styles</strong>: Có độ ưu tiên cao nhất (1000 điểm).</li>
+<li><strong>ID selectors</strong>: 100 điểm VD: (Ví dụ: #id).</li>
+<li><strong>Class selectors, pseudo-class, attribute selectors</strong>: 10 điểm (VD: .class, <!-- -->:hover<!-- -->, [type=&quot;text&quot;]).</li>
+<li><strong>Element selectors, pseudo-elements</strong>: 1 điểm (VD: p, div, ::before).</li>
+</ul>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">example</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">p</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* 1 điểm */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector class" style="color:#00009f">.text</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">green</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* 10 điểm */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector id" style="color:#00009f">#unique</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">red</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* 100 điểm */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&lt;p id=</span><span class="token string" style="color:#e3116c">&quot;unique&quot;</span><span class="token plain"> class=</span><span class="token string" style="color:#e3116c">&quot;text&quot;</span><span class="token plain">&gt;Hello World!&lt;/p&gt; </span><span class="token comment" style="color:#999988;font-style:italic">/* 1000 điểm */</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>!important</strong>:</p>
+<ul>
+<li>Quy tắc có <code>!important</code> sẽ ghi đè tất cả các quy tắc khác, bất kể độ ưu tiên.</li>
+</ul>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">example</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">p</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token plain"> </span><span class="token important">!important</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* Ưu tiên cao nhất */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector class" style="color:#00009f">.text</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">green</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token selector id" style="color:#00009f">#unique</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token color">red</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&lt;p id=</span><span class="token string" style="color:#e3116c">&quot;unique&quot;</span><span class="token plain"> class=</span><span class="token string" style="color:#e3116c">&quot;text&quot;</span><span class="token plain">&gt;Hello World!&lt;/p&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>Thứ tự Cascade</strong>:</p>
+<ul>
+<li>Khi nhiều quy tắc cùng áp dụng cho một phần tử, trình duyệt sẽ quyết định theo thứ tự sau:<!-- -->
+<ul>
+<li><strong>Importance</strong>: Quy tắc có !important sẽ được ưu tiên.</li>
+<li><strong>Specificity</strong>: Quy tắc có độ ưu tiên cao hơn sẽ được chọn.</li>
+<li><strong>Source order</strong>: Nếu mọi yếu tố khác bằng nhau, quy tắc xuất hiện sau cùng trong CSS sẽ được áp dụng.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="box-model">Box Model<a href="#box-model" class="hash-link" aria-label="Direct link to Box Model" title="Direct link to Box Model">​</a></h2>
+<ul>
+<li><strong>Concept</strong>:<!-- -->
+<ul>
+<li>Box Model là một khái niệm mô tả cách trình duyệt xác định kích thước và bố trí các phần tử HTML.</li>
+</ul>
+</li>
+<li><strong>Thành phần</strong>:<!-- -->
+<ul>
+<li>Mỗi phần tử được trình bày như một hộp bao gồm các thành phần: nội dung, padding, border, và margin.<!-- -->
+<ul>
+<li><code>Content</code>: Phần chứa nội dung thực tế của phần tử (text, hình ảnh, v.v.).</li>
+<li><code>Padding</code>: Khoảng trống giữa nội dung và viền của phần tử.</li>
+<li><code>Border</code>: Đường viền bao quanh phần tử.</li>
+<li><code>Margin</code>: Khoảng trống bên ngoài đường viền, cách phần tử với các phần tử khác.
+<img loading="lazy" alt="CSS Box Model" src="/documents/assets/images/css-box-model-19738ba6a91d75b6ae9d0657399a8424.jpg" width="550" height="362" class="img_ev3q"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Attributes</strong>:<!-- -->
+<ul>
+<li><code>width, height</code>: Xác định kích thước của nội dung.</li>
+<li><code>padding</code>: Điều chỉnh khoảng đệm giữa nội dung và border.</li>
+<li><code>border</code>: Định nghĩa đường viền của phần tử.</li>
+<li><code>margin</code>: Xác định khoảng cách giữa phần tử và các phần tử khác.</li>
+</ul>
+</li>
+</ul>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">example</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">&lt;div </span><span class="token selector combinator" style="color:#00009f">&gt;</span><span class="token selector" style="color:#00009f"> Nội dung của box &lt;/div </span><span class="token selector combinator" style="color:#00009f">&gt;</span><span class="token selector" style="color:#00009f"> div</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">width</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">200</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">height</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">100</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">padding</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">20</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">border</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token unit">px</span><span class="token plain"> solid </span><span class="token color">black</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">margin</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">10</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Content: 200px x 100px.</span><br></span><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">  Padding: 20px.</span><br></span><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">  Border: 2px.</span><br></span><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">  Margin: 10px. */</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="flexbox">Flexbox<a href="#flexbox" class="hash-link" aria-label="Direct link to Flexbox" title="Direct link to Flexbox">​</a></h2>
+<p><strong>Concept</strong>:</p>
+<ul>
+<li>Flexbox (Flexible Box Layout) là một mô hình bố cục CSS cung cấp khả năng sắp xếp các phần tử theo trục (horizontal hoặc vertical) một cách linh hoạt.</li>
+<li>Mục đích chính của flexbox là cải thiện việc sắp xếp, điều chỉnh kích thước của các phần tử trong container khi kích thước của chúng thay đổi theo các kích thước màn hình khác nhau.</li>
+</ul>
+<p><strong>Container Properties</strong>:</p>
+<ul>
+<li>Container properties trong Flexbox điều khiển cách mà các phần tử con (flex items) được sắp xếp bên trong phần tử cha (flex container).</li>
+<li>Những thuộc tính này xác định hướng, sắp xếp, và cách các phần tử con được hiển thị khi kích thước container thay đổi.
+<img loading="lazy" alt="CSS Flexbox" src="/documents/assets/images/css-flex-box-f962072f144c2fd6cda1d199489e0bd4.jpg" width="1400" height="1981" class="img_ev3q">
+<ul>
+<li><code>display</code>:<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>flex</code>: Kích hoạt bố cục flex cho phần tử cha (container), và các phần tử con sẽ sắp xếp theo flexbox.</li>
+<li><code>inline-flex</code>: Tương tự flex, nhưng phần tử container sẽ được xử lý như một phần tử inline.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>flex-direction</code>: Xác định hướng sắp xếp các phần tử con bên trong container.<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>row</code>: Sắp xếp từ trái sang phải theo chiều ngang (default).</li>
+<li><code>row-reverse</code>: Sắp xếp từ phải sang trái theo chiều ngang.</li>
+<li><code>column</code>: Sắp xếp từ trên xuống dưới theo chiều dọc.</li>
+<li><code>column-reverse</code>: Sắp xếp từ dưới lên trên theo chiều dọc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>flex-wrap</code>: Quyết định các phần tử con có bị xuống dòng khi không đủ không gian hay không.<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>nowrap</code>: Không cho phép xuống dòng (default).</li>
+<li><code>wrap</code>: Cho phép xuống dòng khi không đủ không gian.</li>
+<li><code>wrap-reverse</code>: Cho phép xuống dòng nhưng theo hướng ngược lại.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>justify-content</code>: Điều khiển cách các phần tử con được sắp xếp dọc theo trục chính (main axis).<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>flex-start</code>: Canh trái/trên.</li>
+<li><code>flex-end</code>: Canh phải/dưới.</li>
+<li><code>center</code>: Canh giữa.</li>
+<li><code>space-between</code>: Khoảng cách đều giữa các phần tử, phần tử đầu và cuối sát container.</li>
+<li><code>space-around</code>: Khoảng cách đều giữa các phần tử, bao gồm khoảng cách giữa container và phần tử đầu/cuối.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>align-items</code>: Điều khiển cách các phần tử con được sắp xếp dọc theo trục phụ (cross axis).<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>stretch</code>: Phần tử con sẽ kéo dãn hết chiều cao/chiều rộng của container (default).</li>
+<li><code>flex-start</code>: Canh trái/trên.</li>
+<li><code>flex-end</code>: Canh phải/dưới.</li>
+<li><code>center</code>: Canh giữa.</li>
+<li><code>baseline</code>: Canh theo dòng cơ sở của phần tử con.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>align-content</code>: Điều khiển cách các dòng flex (khi có nhiều dòng) được sắp xếp dọc theo trục phụ.<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>stretch</code>: Kéo dãn các dòng để chiếm hết không gian container (default).</li>
+<li><code>flex-start</code>: Canh trái/trên.</li>
+<li><code>flex-end</code>: Canh phải/dưới.</li>
+<li><code>center</code>: Canh giữa.</li>
+<li><code>baseline</code>: Canh theo dòng cơ sở của phần tử con.</li>
+<li><code>space-between</code>: Khoảng cách đều giữa các dòng.</li>
+<li><code>space-around</code>: Khoảng cách đều giữa các dòng, bao gồm khoảng cách giữa container và dòng đầu/cuối.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Item Properties</strong></p>
+<ul>
+<li>Item properties điều khiển cách các phần tử con (flex items) hoạt động trong container flex.</li>
+<li>Những thuộc tính này giúp điều chỉnh kích thước, trật tự và sự sắp xếp của từng phần tử con độc lập với nhau.<!-- -->
+<ul>
+<li><code>order</code>: Xác định thứ tự sắp xếp của phần tử trong container.<!-- -->
+<ul>
+<li><strong>Value</strong>: Mặc định là 0, phần tử có số order nhỏ hơn sẽ đứng trước.</li>
+</ul>
+</li>
+<li><code>flex-grow</code>: Điều khiển khả năng mở rộng của phần tử trong container khi có không gian thừa.<!-- -->
+<ul>
+<li><strong>Value</strong>: Một số dương. 0 là mặc định (không mở rộng).</li>
+</ul>
+</li>
+<li><code>flex-shrink</code>: Điều khiển khả năng thu nhỏ của phần tử trong container khi không gian không đủ.<!-- -->
+<ul>
+<li><strong>Value</strong>: Một số dương. 1 là mặc định (phần tử sẽ co lại khi cần).</li>
+</ul>
+</li>
+<li><code>flex-basis</code>: Xác định kích thước ban đầu của phần tử trước khi phân bổ không gian thừa.<!-- -->
+<ul>
+<li><strong>Value</strong>: Giá trị về kích thước (ví dụ: auto, px, %).</li>
+</ul>
+</li>
+<li><code>align-self</code>: Cho phép ghi đè thuộc tính align-items của container chỉ đối với một phần tử con.<!-- -->
+<ul>
+<li><strong>Value</strong>:<!-- -->
+<ul>
+<li><code>auto</code>: Sử dụng giá trị của align-items trong container (default).</li>
+<li><code>flex-start</code>: Canh trái/trên.</li>
+<li><code>flex-end</code>: Canh phải/dưới.</li>
+<li><code>center</code>: Canh giữa.</li>
+<li><code>baseline</code>: Canh theo dòng cơ sở.</li>
+<li><code>stretch</code>: Kéo dãn phần tử để chiếm hết chiều cao/chiều rộng của container.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/CSS/main-concept.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documents/docs/CSS/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">CSS</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documents/docs/Git/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Git</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#css" class="table-of-contents__link toc-highlight">CSS</a></li><li><a href="#how-to" class="table-of-contents__link toc-highlight">How to</a></li><li><a href="#css-syntax" class="table-of-contents__link toc-highlight">CSS Syntax</a></li><li><a href="#css-selector" class="table-of-contents__link toc-highlight">CSS Selector</a></li><li><a href="#css-combinators" class="table-of-contents__link toc-highlight">CSS Combinators</a></li><li><a href="#css-unit" class="table-of-contents__link toc-highlight">CSS Unit</a></li><li><a href="#css-cascade" class="table-of-contents__link toc-highlight">CSS Cascade</a></li><li><a href="#box-model" class="table-of-contents__link toc-highlight">Box Model</a></li><li><a href="#flexbox" class="table-of-contents__link toc-highlight">Flexbox</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documents/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documents/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
