@@ -60,7 +60,6 @@ sidebar_position: 1
       - `[attribute$="value"]`: Chọn phần tử HTML có giá trị thuộc tính kết thúc bằng một giá trị cụ thể.
       - `[attribute*="value"]`: Chọn phần tử HTML có giá trị thuộc tính chứa giá trị cụ thể ở bất kỳ đâu.
         - `VD`: a[target] \{ css }, a[target="_blank"] \{ css }
-    -
     - `Group Selector`:
       - **Concept**: Chọn nhiều phần tử HTML cùng lúc bằng cách nhóm các selector lại với nhau.
       - **Syntax**: Sử dụng dấu phẩy, giữa các selector.
@@ -69,6 +68,19 @@ sidebar_position: 1
       - **Concept**: Chọn phần tử HTML dựa trên trạng thái đặc biệt của phần tử (ví dụ: khi hover chuột hoặc khi phần tử là con đầu tiên).
       - **Syntax**: Sử dụng dấu hai chấm `:` trước tên của pseudo-class.
         - `VD`: a:hover \{ css }, input:focus \{ css }
+      - **Common Pseudo-Classes**:
+        - `:hover`: Kích hoạt khi người dùng di chuột (hover) vào phần tử.
+          - **Áp dụng cho**: Hầu hết các phần tử có thể tương tác như `a`, `button`, `div`, `span`.
+          - `VD`: a:hover \{ css }
+            - **Explanation**: Khi người dùng di chuột qua liên kết a sẽ áp dụng CSS.
+        - `:focus`: Áp dụng khi phần tử nhận được sự tập trung (focus) từ người dùng.
+          - **Áp dụng cho**: Các phần tử có thể nhận input như `input`, `textarea`, `button`, `select`, `a`.
+          - `VD`: input:focus \{ css }
+            - **Explanation**: Khi phần tử input nhận focus (ví dụ: khi người dùng nhấp vào để nhập dữ liệu) sẽ áp dụng CSS.
+        - `:focus`: Áp dụng khi phần tử nhận được sự tập trung (focus) từ người dùng.
+          - **Áp dụng cho**: Các phần tử có thể nhận input như `input`, `textarea`, `button`, `select`, `a`.
+          - `VD`: input:focus \{ css }
+            - **Explanation**: Khi phần tử input nhận focus (ví dụ: khi người dùng nhấp vào để nhập dữ liệu) sẽ áp dụng CSS.
     - `Pseudo-Element Selector`:
       - **Concept**: Chọn một phần của phần tử HTML, chẳng hạn như chữ cái đầu tiên hoặc nội dung trước/ sau phần tử.
       - **Syntax**: Sử dụng dấu hai chấm `::` trước tên của pseudo-element.
@@ -84,21 +96,37 @@ sidebar_position: 1
     - **Concept**: Chọn tất cả các phần tử con của phần tử tổ tiên.
     - **Syntax**: Ký hiệu bằng khoảng trắng `space` giữa hai selector.
       - VD: div p \{ css }
+
+        ![CSS combinators](/img/css-combinators3.png)
         - **Explanation**: Chọn tất cả các thẻ p nằm bên trong bất kỳ thẻ div nào, không quan trọng bao nhiêu cấp độ lồng nhau.
+
+
   - `Child Combinator` (Kết hợp con trực tiếp):
     - **Concept**: Chọn tất cả các phần tử là con trực tiếp của phần tử cha.
     - **Syntax**: Ký hiệu bằng dấu `>` giữa hai selector.
       - VD: div > p \{ css }
+
+        ![CSS combinators](/img/css-combinators2.png)
         - **Explanation**: Chọn tất cả các thẻ p là con trực tiếp của thẻ div, không bao gồm các phần tử con lồng sâu hơn.
+
+
     - `Adjacent Sibling Combinator` (Kết hợp anh em liền kề):
       - **Concept**: Chọn phần tử ngay sau một phần tử khác, là anh em trực tiếp của nó.
       - **Syntax**: Ký hiệu bằng dấu `+` giữa hai selector.
-        - VD: h1 + p \{ css }
-          - **Explanation**: Chọn thẻ p đầu tiên ngay sau thẻ h1 và áp dụng quy tắc CSS cho nó.
+        - VD: p + p \{ css }
+
+        ![CSS combinators](/img/css-combinators1.png)
+
+          - **Explanation**: Chọn thẻ p đầu tiên ngay sau thẻ p và áp dụng quy tắc CSS cho nó.
+
+
     - `General Sibling Combinator` (Kết hợp anh em tổng quát):
       - **Concept**: Chọn tất cả các phần tử anh em của một phần tử khác, không nhất thiết phải liền kề.
       - **Syntax**: Ký hiệu bằng dấu `~` giữa hai selector.
         - VD: h1 ~ p \{ css }
+
+        ![CSS combinators](/img/css-combinators.png)
+
           - **Explanation**: Chọn tất cả các thẻ p là anh em (cùng cấp) với thẻ h1 và áp dụng quy tắc CSS cho chúng.
 
 ## CSS Unit
@@ -221,6 +249,8 @@ sidebar_position: 1
     - **Specificity**: Quy tắc có độ ưu tiên cao hơn sẽ được chọn.
     - **Source order**: Nếu mọi yếu tố khác bằng nhau, quy tắc xuất hiện sau cùng trong CSS sẽ được áp dụng.
 
+![CSS specific](/img/css-specific.png)
+
 ## Box Model
 
 - **Concept**:
@@ -323,3 +353,97 @@ sidebar_position: 1
       - `center`: Canh giữa.
       - `baseline`: Canh theo dòng cơ sở.
       - `stretch`: Kéo dãn phần tử để chiếm hết chiều cao/chiều rộng của container.
+
+## Grid Layout
+
+- **Concept**:
+  - CSS Grid Layout là một hệ thống bố cục mạnh mẽ trong CSS, giúp bạn thiết kế các giao diện phức tạp với khả năng kiểm soát tốt cả về hàng và cột. 
+  - Nó hỗ trợ tạo các khu vực (grid areas) và căn chỉnh các phần tử một cách linh hoạt.
+  - Hệ thống grid hoạt động theo dạng lưới (grid), trong đó các phần tử con có thể được đặt vào các vị trí cụ thể dựa trên hàng (rows) và cột (columns).
+
+Hệ thống lưới của Bootstrap sử dụng các lớp tiện ích để tạo bố cục đáp ứng (responsive layout).
+## Normalize/Reset CSS
+- **Concept**: 
+  - Reset CSS và Normalize CSS là hai kỹ thuật được sử dụng để tạo ra sự đồng nhất giữa các trình duyệt khác nhau khi hiển thị trang web.
+  - Chúng giúp xóa bỏ hoặc chuẩn hóa các style mặc định mà các trình duyệt áp dụng cho các phần tử HTML.
+  - Mục tiêu là đảm bảo trang web có cách hiển thị nhất quán bất kể người dùng sử dụng trình duyệt nào.
+
+
+- **Reset CSS**:
+  - **Concept**: Xóa bỏ toàn bộ các kiểu mặc định của trình duyệt, trả các phần tử HTML về trạng thái cơ bản nhất (như margin, padding, font size).
+  - **Pros**:
+    - Đưa tất cả phần tử về một trạng thái mặc định hoàn toàn.
+    - Giúp nhà phát triển kiểm soát toàn bộ thiết kế từ đầu.
+
+    ```css title='example'
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    ```
+    
+    - **Explanation**: Reset CSS tất cả thẻ HTML. 
+
+  - **Cons**:
+    - Có thể làm mất các kiểu hữu ích mà trình duyệt cung cấp sẵn.
+    - Yêu cầu định nghĩa lại tất cả các kiểu cho các phần tử.
+- **Normalize CSS**:
+  - **Concept**: Chuẩn hóa các kiểu mặc định của trình duyệt nhưng vẫn giữ lại một số kiểu hữu ích (như `margin` và `padding` cơ bản cho các phần tử block VD: `p`, `h1`...).
+  - **Pros**:
+    - Cải thiện sự đồng nhất trong cách hiển thị giữa các trình duyệt.
+    - Giữ lại các kiểu mặc định hữu ích của trình duyệt mà không xóa bỏ tất cả.
+  - **Cons**:
+    - Không loại bỏ hoàn toàn tất cả các kiểu mặc định, do đó một số phần tử có thể vẫn có sự khác biệt nhẹ giữa các trình duyệt.
+
+    ```css title='example'
+    html {
+      line-height: 1.15; /* 1 */
+      -webkit-text-size-adjust: 100%; /* 2 */
+    }
+
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    /* Grouping selectors for common reset */
+    ol, ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    ```
+
+    - **Explanation**: Reset CSS của 1 số phần tử chứ không phải tất cả.  
+
+  - **Use Cases**:
+    - `Reset CSS`: 
+      - Khi phát triển các giao diện từ con số 0, không muốn bất kỳ ảnh hưởng nào từ kiểu mặc định của trình duyệt.
+      - Thường sử dụng trong các dự án thiết kế web tùy chỉnh, nơi mọi thứ đều được thiết kế lại.
+    - `Normalize CSS`:
+      - Khi cần chuẩn hóa kiểu mặc định giữa các trình duyệt nhưng vẫn muốn giữ lại những thiết lập hữu ích như kích thước font chữ cơ bản, margin cho các phần tử.
+      - Thường được sử dụng trong các framework CSS phổ biến (`Bootstrap`, `Foundation`) để đảm bảo sự đồng nhất mà không cần thiết kế lại toàn bộ.
+- **Vị trí sử dụng**:
+  - `Reset CSS`: 
+    - Thường được sử dụng ở đầu tệp CSS chính của dự án, ngay sau thẻ `style` hoặc tệp CSS chính. Đặc biệt thích hợp khi xây dựng một giao diện tùy chỉnh hoàn toàn.
+  - `Normalize CSS`: 
+    - Được sử dụng đầu tiên trong các dự án để chuẩn hóa cách hiển thị cơ bản giữa các trình duyệt, sau đó là các lớp CSS tùy chỉnh hoặc framework.
