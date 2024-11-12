@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkghichu_new=self.webpackChunkghichu_new||[]).push([[6153],{5726:e=>{e.exports=JSON.parse('{"permalink":"/documents/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

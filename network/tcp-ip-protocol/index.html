@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-network docs-version-current docs-doc-page docs-doc-id-tcp-ip-protocol" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.1">
+<title data-rh="true">TCP/IP Protocols | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/documents/network/tcp-ip-protocol"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-network-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-network-current"><meta data-rh="true" property="og:title" content="TCP/IP Protocols | My Site"><meta data-rh="true" name="description" content="Intro"><meta data-rh="true" property="og:description" content="Intro"><link data-rh="true" rel="icon" href="/documents/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/documents/network/tcp-ip-protocol"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/network/tcp-ip-protocol" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/network/tcp-ip-protocol" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/documents/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/documents/blog/atom.xml" title="My Site Atom Feed">
+
+
+
+
+
+<link rel="stylesheet" href="D:\Git\documents\src\global.css"><link rel="stylesheet" href="/documents/assets/css/styles.c7c307f8.css">
+<script src="/documents/assets/js/runtime~main.eca347f4.js" defer="defer"></script>
+<script src="/documents/assets/js/main.4cac51f0.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documents/"><div class="navbar__logo"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a class="navbar__item navbar__link" docspluginid="tab1" href="/documents/web/intro">Web</a><a class="navbar__item navbar__link" docspluginid="tab2" href="/documents/network/intro">Network</a><a class="navbar__item navbar__link" href="/documents/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/http-protocol">HTTP Protocols</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/https-protocol">HTTPS Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/network-protocol">Network Protocols</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/network">Main Concept</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/documents/network/tcp-ip-protocol">TCP/IP Protocols</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documents/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">TCP/IP Protocols</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>TCP/IP Protocols</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intro">Intro<a href="#intro" class="hash-link" aria-label="Direct link to Intro" title="Direct link to Intro">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="TCP/IP protocols suite" src="/documents/assets/images/tcp-ip-protocol-fc92e66c8a7d5ea6fd2f60332d284e8d.webp" width="970" height="546" class="img_ev3q"></p>
+<ul>
+<li><strong>TCP/IP</strong> (Transmission Control Protocol/Internet Protocol) là bộ giao thức mạng cơ bản và phổ biến nhất được sử dụng để kết nối các thiết bị trên mạng và trên Internet.</li>
+<li>Nó được phát triển với mục tiêu tạo ra một hệ thống giao tiếp tin cậy giữa các máy tính khác nhau, từ mạng nội bộ (LAN) đến Internet toàn cầu.</li>
+<li>Bộ giao thức này gồm hai phần chính:<!-- -->
+<ul>
+<li><strong>TCP (Transmission Control Protocol)</strong>: Đảm bảo việc truyền dữ liệu một cách chính xác và tin cậy, chia nhỏ dữ liệu thành các gói tin (packets) và gửi đi, sau đó xác nhận từng gói tin đã đến đích an toàn.</li>
+<li><strong>IP (Internet Protocol)</strong>: Định tuyến các gói tin đến đúng đích thông qua các địa chỉ IP, quyết định đường đi tối ưu để chuyển dữ liệu qua nhiều mạng khác nhau.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="structure">Structure<a href="#structure" class="hash-link" aria-label="Direct link to Structure" title="Direct link to Structure">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="TCP/IP protocols suite" src="/documents/assets/images/tcp-ip-structure-c308802939eb28d2bcff6ebbf16930c8.png" width="2012" height="1020" class="img_ev3q"></p>
+<ul>
+<li><strong><code>TCP/IP</code></strong> hoạt động trên một kiến trúc gồm 4 lớp:<!-- -->
+<ol>
+<li><strong>Lớp liên kết (Network access Layer)</strong>: Chịu trách nhiệm kết nối phần cứng, truyền tải dữ liệu qua các kết nối vật lý như Ethernet hoặc Wi-Fi.</li>
+<li><strong>Lớp Internet (Internet Layer)</strong>: Chịu trách nhiệm định tuyến và định danh thiết bị qua các địa chỉ IP.</li>
+<li><strong>Lớp vận chuyển (Transport Layer)</strong>: Quản lý việc truyền dữ liệu giữa các thiết bị. TCP và UDP là hai giao thức chính của lớp này.</li>
+<li><strong>Lớp ứng dụng (Application Layer)</strong>: Cung cấp giao diện cho các ứng dụng người dùng, ví dụ: HTTP/HTTPS, FTP, và DNS.</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advantage">Advantage<a href="#advantage" class="hash-link" aria-label="Direct link to Advantage" title="Direct link to Advantage">​</a></h2>
+<ul>
+<li><strong>Tin cậy và hiệu quả</strong>: TCP/IP đảm bảo dữ liệu đến nơi an toàn và chính xác qua TCP, trong khi IP hỗ trợ định tuyến tối ưu.</li>
+<li><strong>Tính mở và chuẩn hóa</strong>: TCP/IP là một chuẩn mở và có thể hoạt động trên nhiều loại mạng và hệ điều hành khác nhau, giúp nó trở thành xương sống của Internet.</li>
+<li><strong>Khả năng mở rộng cao</strong>: TCP/IP có thể hoạt động từ mạng nhỏ đến mạng rất lớn như Internet.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application">Application<a href="#application" class="hash-link" aria-label="Direct link to Application" title="Direct link to Application">​</a></h2>
+<ul>
+<li><strong>Truy cập Internet</strong>: TCP/IP là nền tảng của việc truy cập và trao đổi thông tin trên Internet.</li>
+<li><strong>Gửi email và truyền dữ liệu</strong>: Hầu hết các dịch vụ email và truyền tải tệp đều sử dụng TCP/IP làm giao thức chính để gửi dữ liệu một cách tin cậy.</li>
+<li><strong>Các dịch vụ mạng và máy chủ</strong>: Hầu hết các máy chủ web, máy chủ tệp, và dịch vụ mạng đều chạy trên TCP/IP.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="usage-example">Usage example<a href="#usage-example" class="hash-link" aria-label="Direct link to Usage example" title="Direct link to Usage example">​</a></h2>
+<ul>
+<li>Khi người dùng truy cập vào một trang web, máy tính của họ sử dụng TCP/IP để gửi yêu cầu đến máy chủ web<!-- -->
+<ul>
+<li>=&gt; TCP chia yêu cầu này thành các gói tin, gửi chúng qua IP đến máy chủ<!-- -->
+<ul>
+<li>=&gt; Khi nhận được, máy chủ trả về dữ liệu của trang web, và TCP/IP sẽ đảm bảo các gói tin này đến đúng thứ tự để hiển thị trang web hoàn chỉnh.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How it works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How it works" title="Direct link to How it works">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="TCP/IP how it works" src="/documents/assets/images/tcp-ip-how-works-50e91ddaa63c68f3ce12d3f6a074ecc8.png" width="2048" height="1152" class="img_ev3q"></p>
+<ul>
+<li>Khi dữ liệu cần được truyền từ một thiết bị này sang thiết bị khác qua mạng, <strong>TCP</strong> sẽ chia dữ liệu thành các gói tin nhỏ, gửi qua <strong>IP</strong> đến đích. Tại đích, <strong>TCP</strong> của thiết bị nhận sẽ sắp xếp lại các gói tin này theo đúng thứ tự và gửi lại cho ứng dụng yêu cầu.</li>
+<li><strong>IP</strong> giúp định tuyến các gói tin qua các router và mạng trung gian để tìm ra đường đi hiệu quả nhất từ thiết bị nguồn đến thiết bị đích.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="protocols-in-the-tcpip-suite">Protocols in the TCP/IP suite<a href="#protocols-in-the-tcpip-suite" class="hash-link" aria-label="Direct link to Protocols in the TCP/IP suite" title="Direct link to Protocols in the TCP/IP suite">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="TCP/IP protocols suite" src="/documents/assets/images/tcp-ip-protocol-suite-285e49a42ab4f1c4ad101b037b9ce32e.png" width="2286" height="1200" class="img_ev3q"></p>
+<ul>
+<li><strong>IP</strong> (Internet Protocol): Định tuyến và định danh thiết bị với địa chỉ IP.</li>
+<li><strong>TCP</strong> (Transmission Control Protocol): Truyền dữ liệu tin cậy, chia gói và xác nhận dữ liệu đã đến.</li>
+<li><strong>UDP</strong> (User Datagram Protocol): Truyền d  ữ liệu nhanh, không đảm bảo, phù hợp cho truyền phát trực tiếp.</li>
+<li><strong>HTTP/HTTPS</strong> (Hypertext Transfer Protocol/Secure): Truy cập và trao đổi dữ liệu trên web.</li>
+<li><strong>FTP</strong> (File Transfer Protocol): Truyền tệp qua mạng.</li>
+<li><strong>SMTP</strong> (Simple Mail Transfer Protocol): Gửi email.</li>
+<li><strong>DNS</strong> (Domain Name System): Chuyển đổi tên miền thành địa chỉ IP.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tcp">TCP<a href="#tcp" class="hash-link" aria-label="Direct link to TCP" title="Direct link to TCP">​</a></h3>
+<ul>
+<li>
+<p><strong>Intro</strong></p>
+<ul>
+<li><strong>TCP (Transmission Control Protocol)</strong> là một trong những giao thức chính trong bộ TCP/IP, chuyên về truyền tải dữ liệu một cách tin cậy qua mạng.</li>
+<li>TCP đảm bảo rằng dữ liệu gửi đi được chia thành các gói tin nhỏ, được đánh số, truyền qua mạng, và được sắp xếp lại đúng thứ tự khi đến đích.</li>
+<li>TCP giúp phát hiện và xử lý các lỗi truyền tải bằng cách yêu cầu gửi lại những gói tin bị thất lạc.</li>
+</ul>
+</li>
+<li>
+<p><strong>How it works</strong></p>
+<p><img decoding="async" loading="lazy" alt="TCP action" src="/documents/assets/images/tcp-action-10ea799cb806e5a9263c649909ea6a5d.jpg" width="800" height="388" class="img_ev3q"></p>
+<ul>
+<li><strong><code>TCP</code></strong> sử dụng quá trình gọi là <strong>three-way handshake</strong> để thiết lập kết nối trước khi truyền dữ liệu, đảm bảo rằng cả hai thiết bị đều sẵn sàng và đã nhận diện được nhau.<!-- -->
+<ul>
+<li><strong>Bước 1</strong>: Thiết bị gửi yêu cầu <strong>SYN</strong> (synchronize) đến thiết bị nhận để bắt đầu kết nối.</li>
+<li><strong>Bước 2</strong>: Thiết bị nhận phản hồi bằng một gói <strong>SYN-ACK</strong> (synchronize acknowledgment) để chấp nhận yêu cầu.</li>
+<li><strong>Bước 3</strong>: Thiết bị gửi hoàn tất bằng một gói <strong>ACK</strong> (acknowledgment) để xác nhận kết nối đã thiết lập thành công.</li>
+</ul>
+</li>
+<li>Sau khi thiết lập kết nối, dữ liệu được chia thành các gói nhỏ, đánh số, và gửi đi. Mỗi gói đều có phần kiểm tra lỗi, và thiết bị nhận sẽ gửi lại thông báo xác nhận cho từng gói nhận thành công. Nếu một gói bị mất hoặc có lỗi, TCP sẽ yêu cầu gửi lại gói đó.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantage</strong></p>
+<ul>
+<li><strong>Đảm bảo độ tin cậy</strong>: TCP đảm bảo rằng dữ liệu đến đúng đích mà không bị mất gói, thiếu dữ liệu, hoặc lộn xộn.</li>
+<li><strong>Kiểm soát lỗi</strong>: TCP tự động phát hiện lỗi và yêu cầu gửi lại gói tin nếu cần thiết.</li>
+<li><strong>Quản lý lưu lượng</strong>: Điều chỉnh tốc độ truyền dữ liệu tùy theo tình trạng của mạng, giúp giảm tình trạng quá tải.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application</strong></p>
+<ul>
+<li><strong>Duyệt web</strong>: Các trình duyệt web sử dụng TCP để kết nối và tải nội dung từ máy chủ một cách đáng tin cậy.</li>
+<li><strong>Email</strong>: Hầu hết các dịch vụ email sử dụng TCP để truyền tải email một cách an toàn và không mất mát.</li>
+<li><strong>Truyền tệp và tải lên/tải xuống</strong>: TCP đảm bảo dữ liệu tệp được truyền tải đúng thứ tự và đầy đủ.</li>
+</ul>
+</li>
+<li>
+<p><strong>Usage example</strong></p>
+<ul>
+<li>Khi người dùng tải một trang web, TCP chia dữ liệu của trang thành nhiều gói tin và gửi từng gói theo thứ tự. Nếu bất kỳ gói tin nào gặp lỗi, TCP sẽ yêu cầu gửi lại gói đó cho đến khi trang web được tải đ ầy đủ và hiển thị chính xác.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration and Usage</strong></p>
+<ul>
+<li><strong>Cấu hình trên server và client</strong>: TCP thường được cấu hình mặc định trên cả server và client trong các giao thức truyền tải tin cậy, như HTTP, FTP, và SMTP.</li>
+<li><strong>Không cần cấu hình thêm</strong>: Hầu hết các dịch vụ và ứng dụng mặc định sử dụng TCP nếu yêu cầu độ tin cậy và thứ tự, do đó thường không cần cấu hình thêm khi sử dụng.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="udp">UDP<a href="#udp" class="hash-link" aria-label="Direct link to UDP" title="Direct link to UDP">​</a></h3>
+<ul>
+<li>
+<p><strong>Intro</strong></p>
+<ul>
+<li><strong>UDP (User Datagram Protocol)</strong> là một giao thức truyền tải trong bộ TCP/IP, được thiết kế để truyền dữ liệu nhanh chóng mà không cần đảm bảo độ tin cậy hoặc thứ tự.</li>
+<li>Khác với TCP, UDP không thiết lập kết nối trước khi truyền và không yêu cầu xác nhận từ phía nhận.</li>
+<li>Điều này giúp UDP phù hợp với các ứng dụng ưu tiên tốc độ truyền tải hơn độ tin cậy và thứ tự dữ liệu.</li>
+</ul>
+</li>
+<li>
+<p><strong>How It Works</strong></p>
+<p><img decoding="async" loading="lazy" alt="UDP how works" src="/documents/assets/images/udp-how-works-7e6cd037ac26ed00c034d125c18cb3fc.png" width="967" height="525" class="img_ev3q"></p>
+<ul>
+<li>UDP gửi các gói dữ liệu (<strong>datagrams</strong>) trực tiếp đến đích mà không cần thực hiện quá trình <strong>three-way handshake</strong> như TCP.</li>
+<li>Các gói tin được truyền độc lập, không có xác nhận từ phía nhận, và không kiểm tra hoặc sửa lỗi từng gói.</li>
+<li>Nếu một gói tin bị mất hoặc lỗi, nó sẽ không được gửi lại.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantages</strong></p>
+<ul>
+<li><strong>High-Speed Transmission</strong>: UDP ít tốn thời gian hơn do không cần thiết lập kết nối hoặc kiểm tra lỗi.</li>
+<li><strong>Lower Bandwidth Usage</strong>: Không yêu cầu xác nhận từng gói, giúp giảm băng thông.</li>
+<li><strong>Real-Time Data</strong>: UDP thích hợp cho truyền tải dữ liệu thời gian thực, như video streaming hoặc trò chơi trực tuyến, nơi mất một vài gói tin không làm gián đoạn đáng kể trải nghiệm người dùng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Applications</strong></p>
+<ul>
+<li><strong>Video and Audio Streaming</strong>: Các dịch vụ phát trực tuyến yêu cầu truyền tải nhanh chóng và liên tục, ví dụ như YouTube Live hoặc các ứng dụng truyền hình trực tiếp.</li>
+<li><strong>Online Gaming</strong>: Các trò chơi yêu cầu phản hồi nhanh như bắn súng hoặc đua xe sử dụng UDP để giảm độ trễ.</li>
+<li><strong>DNS (Domain Name System)</strong>: DNS sử dụng UDP để gửi truy vấn tên miền, giúp tiết kiệm thời gian tra cứu địa chỉ IP.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example of Use</strong></p>
+<ul>
+<li>Khi người dùng xem một buổi phát trực tiếp, UDP truyền dữ liệu video liên tục và nếu có một vài gói bị mất, dữ liệu sẽ không được gửi lại, giúp giảm độ trễ.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration and Usage</strong></p>
+<ul>
+<li><strong>Using UDP in Applications</strong>: Để sử dụng UDP, cả client và server phải hỗ trợ UDP, và ứng dụng cần được thiết kế để sử dụng giao thức này cho truyền tải dữ liệu không yêu cầu độ tin cậy cao.</li>
+<li><strong>Socket Programming</strong>: UDP được sử dụng qua các socket UDP bằng cách chỉ định giao thức là UDP khi tạo socket truyền tải.</li>
+</ul>
+</li>
+<li>
+<p><strong>Comparison with TCP</strong></p>
+<p><img decoding="async" loading="lazy" alt="TCP vs DCP" src="/documents/assets/images/tcp-vs-udp-28151b0be9a81d88df957dbc0a8ea03a.svg" width="700" height="246" class="img_ev3q"></p>
+<ul>
+<li><strong>Reliability</strong>: TCP có khả năng kiểm tra lỗi và yêu cầu gửi lại gói tin, trong khi UDP thì không, vì vậy TCP thích hợp cho các ứng dụng yêu cầu độ tin cậy cao (như tải file), còn UDP ưu tiên tốc độ và hiệu quả trong các ứng dụng không cần tính toàn vẹn của tất cả dữ liệu.</li>
+<li><strong>Connection</strong>: TCP là giao thức hướng kết nối (connection-oriented), trong khi UDP là giao thức không kết nối (connectionless).</li>
+<li><strong>Performance</strong>: UDP thường nhanh hơn TCP vì không phải thực hiện các bước thiết lập kết nối và xác nhận gói tin.</li>
+</ul>
+</li>
+<li>
+<p><strong>Broadcast, Unicast, and Multicast</strong></p>
+<ul>
+<li><strong>Broadcast</strong>: UDP hỗ trợ broadcast, cho phép gửi gói dữ liệu đến tất cả các thiết bị trong mạng cùng một lúc. Điều này hữu ích trong các mạng LAN khi cần gửi thông tin tới tất cả thiết bị.</li>
+<li><strong>Unicast</strong>: Là cách truyền dữ liệu đến một địa chỉ IP cụ thể, áp dụng cho cả UDP và TCP, để đảm bảo dữ liệu chỉ gửi đến một thiết bị nhất định.</li>
+<li><strong>Multicast</strong>: UDP có thể sử dụng multicast để gửi dữ liệu đến một nhóm thiết bị trong mạng, tiết kiệm băng thông hơn broadcast trong các ứng dụng yêu cầu truyền tải cho nhiều người nhận.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ip">IP<a href="#ip" class="hash-link" aria-label="Direct link to IP" title="Direct link to IP">​</a></h3>
+<ul>
+<li>
+<p><strong>Introduction</strong></p>
+<p><img decoding="async" loading="lazy" alt="IP intro" src="/documents/assets/images/ip-intro-8ca7400b714cd6ef71d4bbeb4710a2f3.jpeg" width="2000" height="1125" class="img_ev3q"></p>
+<ul>
+<li><strong>IP Protocol</strong> (Internet Protocol) là giao thức chịu trách nhiệm định tuyến các gói dữ liệu từ nguồn đến đích trong mạng. Là phần cốt lõi của bộ giao thức TCP/IP, IP đóng vai trò là nền tảng cho việc truyền tải dữ liệu qua Internet.</li>
+<li>Trong <strong><code>IP</code></strong>, mỗi thiết bị được gán một <strong>địa chỉ IP</strong> duy nhất giúp xác định vị trí của nó trong mạng, giúp các gói dữ liệu đến đúng đích.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope</strong></p>
+<ul>
+<li><strong>IP</strong> hoạt động trong lớp Network của mô hình TCP/IP, chịu trách nhiệm chính trong việc định tuyến và giao nhận dữ liệu trên các mạng cục bộ (LAN) hoặc mạng diện rộng (WAN).</li>
+</ul>
+</li>
+<li>
+<p><strong>How It Works</strong></p>
+<ul>
+<li><strong>Chia nhỏ dữ liệu thành các gói tin</strong>: Dữ liệu được chia thành các gói nhỏ gọi là packet. Mỗi packet chứa địa chỉ IP nguồn và địa chỉ IP đích.</li>
+<li><strong>Định tuyến các gói tin</strong>: Các router trong mạng sử dụng địa chỉ IP để xác định đường đi tối ưu cho mỗi packet, giúp packet đến đích một cách hiệu quả.</li>
+<li><strong>Lắp ráp lại dữ liệu</strong>: Khi các packet đến đích, chúng được lắp ráp lại thành dữ liệu gốc để phục vụ cho các ứng dụng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Versions</strong></p>
+<ol>
+<li><strong>IPv4</strong>: Phiên bản IP đầu tiên và vẫn phổ biến, sử dụng địa chỉ 32-bit (có dạng <code>192.168.1.1</code>), cho phép tối đa khoảng 4.3 tỷ địa chỉ IP.</li>
+<li><strong>IPv6</strong>: Được phát triển để thay thế IPv4 do giới hạn địa chỉ, IPv6 sử dụng địa chỉ 128-bit (có dạng <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>), cho phép số lượng địa chỉ lớn hơn nhiều.</li>
+</ol>
+</li>
+<li>
+<p><strong>Features</strong></p>
+<ul>
+<li><strong>Connectionless</strong>: IP không yêu cầu thiết lập kết nối trước khi gửi dữ liệu, giúp giảm độ trễ.</li>
+<li><strong>Không đảm bảo</strong>: IP không đảm bảo rằng các gói tin sẽ đến đích hoặc sẽ đến theo đúng thứ tự. Các dịch vụ như TCP sẽ bổ sung tính năng kiểm soát lỗi và đảm bảo thứ tự khi cần.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantage</strong></p>
+<ul>
+<li><strong>Khả năng mở rộng</strong>: IP có khả năng định tuyến cho hàng triệu thiết bị trên toàn cầu.</li>
+<li><strong>Tối ưu hóa</strong>: IP kết hợp với các giao thức khác để tối ưu hóa việc truyền tải dữ liệu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disadvantage</strong></p>
+<ul>
+<li><strong>Không đảm bảo</strong>: IP không cung cấp cơ chế xác nhận hoặc phục hồi lỗi, nên không đảm bảo dữ liệu sẽ đến đích đầy đủ hoặc không bị lỗi.</li>
+<li><strong>Bị giới hạn địa chỉ trong IPv4</strong>: IPv4 chỉ cung cấp một lượng địa chỉ IP hữu hạn, dẫn đến việc phải chuyển sang IPv6 để hỗ trợ nhu cầu ngày càng tăng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application</strong></p>
+<p><img decoding="async" loading="lazy" alt="IP example" src="/documents/assets/images/ip-example-ba1f923d27a104d44793b7511d8e79bb.png" width="1200" height="700" class="img_ev3q"></p>
+<ul>
+<li><strong>Internet Communication</strong>: IP là nền tảng để truyền tải dữ liệu trên Internet, cho phép các ứng dụng và dịch vụ trực tuyến giao tiếp với nhau.</li>
+<li><strong>Mạng nội bộ (LAN)</strong>: Địa chỉ IP cũng được sử dụng trong các mạng cục bộ để định danh và giao tiếp giữa các thiết bị trong cùng một mạng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example</strong></p>
+<ul>
+<li>Khi một người dùng truy cập trang web, IP định tuyến các gói tin từ máy tính của người dùng đến máy chủ chứa trang web đó và ngược lại, đảm bảo dữ liệu truyền tải đến đúng địa chỉ đích.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ftp">FTP<a href="#ftp" class="hash-link" aria-label="Direct link to FTP" title="Direct link to FTP">​</a></h3>
+<ul>
+<li>
+<p><strong>Introduction</strong></p>
+<p><img decoding="async" loading="lazy" alt="FTP intro" src="/documents/assets/images/ftp-intro-a32a31d005b9cb4d58f18159c05ea221.png" width="820" height="460" class="img_ev3q"></p>
+<ul>
+<li><strong>FTP</strong> (File Transfer Protocol) là một giao thức mạng tiêu chuẩn được thiết kế để truyền tải các tệp (files) từ máy chủ (server) đến máy khách (client) hoặc ngược lại qua mạng TCP/IP.</li>
+<li><strong>FTP</strong> là một trong những giao thức truyền tải file lâu đời và phổ biến nhất, được sử dụng rộng rãi cho việc chia sẻ và quản lý dữ liệu giữa các thiết bị trong mạng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope</strong></p>
+<ul>
+<li><strong>FTP</strong> hoạt động ở lớp ứng dụng trong mô hình TCP/IP và thường được dùng để trao đổi dữ liệu trong nội bộ công ty, chia sẻ tệp giữa các nhân viên hoặc để khách hàng tải về các file từ máy chủ công cộng.</li>
+</ul>
+</li>
+<li>
+<p><strong>How It Works</strong></p>
+<p><img decoding="async" loading="lazy" alt="FTP action" src="/documents/assets/images/ftp-action-5b1bb2e40ae65bc97cb857346e58ff90.png" width="1800" height="1055" class="img_ev3q"></p>
+<ol>
+<li><strong>Kết nối điều khiển và truyền tải dữ liệu</strong>:<!-- -->
+<ul>
+<li>FTP thiết lập hai kết nối riêng biệt: một kết nối điều khiển (control connection) để quản lý phiên làm việc và một kết nối truyền tải (data connection) để truyền tải dữ liệu.</li>
+</ul>
+</li>
+<li><strong>Tương tác giữa client và server</strong>:<!-- -->
+<ul>
+<li>Client gửi yêu cầu đến server, sau đó server phản hồi và thực hiện các lệnh như tải lên (upload) hoặc tải xuống (download).</li>
+</ul>
+</li>
+<li><strong>Chế độ truyền tải</strong>:<!-- -->
+<ul>
+<li>FTP có hai chế độ truyền tải là chế độ chủ động (active mode) và chế độ bị động (passive mode).<!-- -->
+<ul>
+<li>Trong chế độ chủ động, server mở một cổng và chờ client kết nối.</li>
+<li>Trong chế độ bị động, client mở cổng và server kết nối lại, giúp tránh các vấn đề bảo mật với tường lửa.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Features</strong></p>
+<ul>
+<li><strong>Authentication</strong>: FTP có cơ chế xác thực người dùng bằng cách yêu cầu tên người dùng (username) và mật khẩu (password).</li>
+<li><strong>Đa dạng phương thức truyền tải</strong>: Hỗ trợ tải lên và tải xuống nhiều loại tệp, cũng như quản lý thư mục từ xa (remote directory management).</li>
+<li><strong>Khả năng tiếp tục truyền tải</strong>: Cho phép tiếp tục truyền tải từ vị trí dừng trước đó khi bị ngắt kết nối.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantage</strong></p>
+<ul>
+<li><strong>Dễ sử dụng</strong>: FTP hỗ trợ giao diện thân thiện với người dùng, giúp việc tải lên và tải xuống dễ dàng.</li>
+<li><strong>Quản lý thư mục từ xa</strong>: Người dùng có thể truy cập, sửa đổi, hoặc xóa tệp/thư mục trên server từ xa.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disadvantage</strong></p>
+<ul>
+<li><strong>Bảo mật kém</strong>: FTP không mã hóa dữ liệu, bao gồm cả tên người dùng và mật khẩu, khiến nó dễ bị đánh cắp thông tin. SFTP hoặc FTPS có thể được dùng để tăng tính bảo mật.</li>
+<li><strong>Phụ thuộc vào cấu hình mạng</strong>: Chế độ chủ động FTP có thể bị chặn bởi tường lửa, gây khó khăn khi truyền tải qua các hệ thống bảo mật nghiêm ngặt.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application</strong></p>
+<ul>
+<li><strong>Truyền tải và sao lưu dữ liệu</strong>: Dùng để sao lưu dữ liệu giữa các máy chủ, tải lên các bản cập nhật phần mềm và lưu trữ dữ liệu.</li>
+<li><strong>Website Hosting</strong>: Sử dụng để tải lên và quản lý các tệp website trên các máy chủ lưu trữ web.</li>
+<li><strong>Chia sẻ tệp nội bộ</strong>: Được sử dụng trong các tổ chức để chia sẻ tệp qua mạng nội bộ hoặc giữa các văn phòng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example</strong></p>
+<ul>
+<li>Khi một nhà phát triển web cập nhật website, họ sử dụng FTP để tải lên các file mới từ máy tính cá nhân lên máy chủ web.</li>
+<li>Các công ty có thể sử dụng FTP để lưu trữ các tài liệu quan trọng trên máy chủ công ty, giúp nhân viên truy cập từ xa một cách dễ dàng.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="smtp">SMTP<a href="#smtp" class="hash-link" aria-label="Direct link to SMTP" title="Direct link to SMTP">​</a></h3>
+<ul>
+<li>
+<p><strong>Introduction</strong></p>
+<p><img decoding="async" loading="lazy" alt="SMTP intro" src="/documents/assets/images/smtp-intro-4c0fd67b04d6e51f9f27a4dac640f929.webp" width="1920" height="1280" class="img_ev3q"></p>
+<ul>
+<li><strong>SMTP</strong> (Simple Mail Transfer Protocol) là giao thức tiêu chuẩn để gửi email qua mạng Internet. SMTP chịu trách nhiệm chuyển email từ máy gửi đến máy chủ email và sau đó tới máy chủ nhận. Giao thức này hỗ trợ gửi email theo các tiêu chuẩn để đảm bảo tính chính xác và an toàn của quá trình truyền tải.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope</strong></p>
+<ul>
+<li>SMTP được sử dụng rộng rãi bởi các dịch vụ email, doanh nghiệp, và tổ chức để truyền tải email. Nó là thành phần cơ bản trong hệ thống email và hoạt động chủ yếu trong môi trường Internet và mạng nội bộ.</li>
+</ul>
+</li>
+<li>
+<p><strong>How It Works</strong></p>
+<p><img decoding="async" loading="lazy" alt="SMTP action" src="/documents/assets/images/smtp-action-ae032c52a7cf30d8f8a55637b6015333.png" width="792" height="436" class="img_ev3q"></p>
+<ul>
+<li>SMTP thiết lập kết nối giữa máy gửi và máy nhận thông qua các lệnh chuẩn, bao gồm xác thực người gửi, gửi nội dung email, và xử lý các yêu cầu phản hồi.</li>
+<li>Quá trình bắt đầu từ máy gửi (SMTP client) gửi yêu cầu đến máy chủ SMTP (SMTP server), sau đó server xác nhận và chuyển tiếp email đến server đích hoặc tiếp tục chuyển đến một server trung gian nếu cần.</li>
+<li>Các máy chủ đích sẽ nhận email và lưu trữ để người nhận có thể truy cập thông qua các giao thức như IMAP hoặc POP3.</li>
+</ul>
+</li>
+<li>
+<p><strong>Features</strong></p>
+<ul>
+<li><strong>Gửi email</strong>: SMTP cung cấp khả năng gửi email từ người gửi đến người nhận qua các mạng khác nhau.</li>
+<li><strong>Xác thực</strong>: SMTP hỗ trợ xác thực người gửi để đảm bảo rằng chỉ những người dùng hợp lệ mới có thể gửi email.</li>
+<li><strong>Chuyển tiếp và định tuyến</strong>: SMTP có thể chuyển tiếp email thông qua các server trung gian khi cần thiết, giúp chuyển phát email đến đích cuối cùng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantage</strong></p>
+<ul>
+<li><strong>Khả năng truyền tải nhanh chóng</strong>: SMTP cho phép gửi email đến người nhận gần như ngay lập tức qua các mạng.</li>
+<li><strong>Dễ sử dụng và triển khai</strong>: SMTP là giao thức phổ biến, dễ tích hợp vào các ứng dụng email.</li>
+<li><strong>Tính năng xác thực</strong>: Đảm bảo chỉ những người dùng hợp lệ mới có thể gửi email, giúp tăng cường bảo mật.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disadvantage</strong></p>
+<ul>
+<li><strong>Bảo mật hạn chế</strong>: SMTP không mã hóa dữ liệu theo mặc định, làm cho thông tin email có thể bị xem trộm nếu không bảo vệ.</li>
+<li><strong>Không hỗ trợ tệp đính kèm lớn</strong>: SMTP có giới hạn về kích thước email, điều này gây khó khăn khi gửi các tệp lớn.</li>
+<li><strong>Khả năng bị spam</strong>: SMTP có thể bị lạm dụng để gửi spam nếu không có biện pháp bảo mật hiệu quả.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application</strong></p>
+<ul>
+<li><strong>Dịch vụ email</strong>: SMTP được sử dụng bởi các nhà cung cấp dịch vụ email như Gmail, Yahoo Mail, Outlook để gửi email.</li>
+<li><strong>Hệ thống doanh nghiệp</strong>: SMTP được dùng để gửi các thông báo, cảnh báo, và cập nhật nội bộ trong các tổ chức.</li>
+<li><strong>Ứng dụng web</strong>: Các ứng dụng web thường sử dụng SMTP để gửi email xác thực, khôi phục mật khẩu, và các thông báo đến người dùng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example</strong></p>
+<ul>
+<li>Khi một người dùng gửi email qua Gmail, SMTP chuyển email từ máy tính của người gửi đến máy chủ Gmail và sau đó đến máy chủ của người nhận, nơi người nhận có thể đọc email.</li>
+<li>Một hệ thống quản lý khách hàng (CRM) có thể sử dụng SMTP để gửi các bản tin tự động cho khách hàng về sản phẩm mới.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dns">DNS<a href="#dns" class="hash-link" aria-label="Direct link to DNS" title="Direct link to DNS">​</a></h3>
+<ul>
+<li>
+<p><strong>Introduction</strong></p>
+<p><img decoding="async" loading="lazy" alt="DNS intro" src="/documents/assets/images/dns-intro-4a875416a9d28d57845df7e08e9bae24.jpg" width="1200" height="675" class="img_ev3q"></p>
+<ul>
+<li><strong>DNS</strong> (Domain Name System) là hệ thống phân giải tên miền, đóng vai trò chuyển đổi tên miền dễ nhớ (ví dụ: <a href="http://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a>) thành địa chỉ IP của máy chủ chứa nội dung website. Nhờ đó, người dùng có thể truy cập các trang web bằng tên miền thay vì phải nhớ các chuỗi số địa chỉ IP.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope</strong></p>
+<ul>
+<li>DNS là một phần thiết yếu của Internet và mạng nội bộ, cho phép việc truy cập các tài nguyên mạng dễ dàng hơn. Nó hoạt động trên quy mô toàn cầu, hỗ trợ mọi thiết bị có khả năng kết nối mạng.</li>
+</ul>
+</li>
+<li>
+<p><strong>How It Works</strong></p>
+<p><img decoding="async" loading="lazy" alt="DNS action" src="/documents/assets/images/dns-action-744dba6234350ca01700f56490220a59.png" width="1227" height="658" class="img_ev3q"></p>
+<ul>
+<li>Khi người dùng nhập một tên miền vào trình duyệt, DNS sẽ bắt đầu quá trình tìm kiếm địa chỉ IP tương ứng.<!-- -->
+<ul>
+<li><strong>Truy vấn DNS</strong>: Trình duyệt gửi truy vấn đến máy chủ DNS gần nhất để yêu cầu địa chỉ IP của tên miền.</li>
+<li><strong>Phân giải</strong>: Máy chủ DNS sẽ tìm kiếm địa chỉ IP thông qua các máy chủ khác nhau (máy chủ gốc, máy chủ TLD, và máy chủ có thẩm quyền) cho đến khi tìm được địa chỉ IP cần thiết.</li>
+<li><strong>Phản hồi</strong>: Máy chủ DNS gửi lại địa chỉ IP cho trình duyệt, và từ đó trình duyệt kết nối đến máy chủ đích để tải nội dung website.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Features</strong></p>
+<ul>
+<li><strong>Phân giải tên miền</strong>: Chuyển đổi tên miền thành địa chỉ IP, giúp việc truy cập Internet dễ dàng hơn.</li>
+<li><strong>Phân cấp hệ thống</strong>: DNS được xây dựng theo cấu trúc phân cấp, với các máy chủ gốc, máy chủ TLD, và máy chủ có thẩm quyền để tối ưu hóa quá trình tìm kiếm.</li>
+<li><strong>Lưu trữ và bộ nhớ đệm</strong>: Máy chủ DNS có thể lưu trữ các bản ghi để cải thiện tốc độ phân giải và giảm tải cho các máy chủ khác.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantage</strong></p>
+<ul>
+<li><strong>Dễ dàng sử dụng</strong>: Người dùng chỉ cần nhớ tên miền thay vì địa chỉ IP phức tạp.</li>
+<li><strong>Tăng hiệu suất</strong>: Bộ nhớ đệm giúp giảm thời gian truy vấn và tăng tốc độ truy cập.</li>
+<li><strong>Phân cấp rõ ràng</strong>: Hệ thống phân cấp giúp DNS hoạt động hiệu quả và giảm tải cho các máy chủ.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disadvantage</strong></p>
+<ul>
+<li><strong>Khả năng bị tấn công</strong>: DNS dễ bị tấn công DDoS, DNS spoofing, và cache poisoning.</li>
+<li><strong>Phụ thuộc vào máy chủ</strong>: Nếu máy chủ DNS gặp sự cố, truy cập Internet sẽ bị gián đoạn.</li>
+<li><strong>Độ trễ</strong>: Đôi khi có thể xảy ra độ trễ khi phân giải tên miền, đặc biệt là với tên miền mới hoặc chưa được lưu trữ trong bộ nhớ đệm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application</strong></p>
+<ul>
+<li><strong>Truy cập website</strong>: DNS là thành phần thiết yếu để truy cập các trang web.</li>
+<li><strong>Dịch vụ mạng nội bộ</strong>: DNS hỗ trợ phân giải tên trong mạng nội bộ của doanh nghiệp.</li>
+<li><strong>Ứng dụng IoT</strong>: Các thiết bị IoT sử dụng DNS để kết nối và giao tiếp trên mạng.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example</strong></p>
+<ul>
+<li>Khi người dùng truy cập &quot;<a href="http://www.google.com" target="_blank" rel="noopener noreferrer">www.google.com</a>&quot;,<!-- --> trình duyệt sẽ gửi truy vấn DNS để tìm địa chỉ IP của Google. Sau khi nhận được phản hồi, trình duyệt có thể kết nối đến máy chủ của Google để hiển thị nội dung trang web.</li>
+<li>Một công ty sử dụng DNS nội bộ để phân giải các tên miền trong mạng cục bộ, giúp nhân viên truy cập dễ dàng các tài nguyên nội bộ như file server và máy chủ ứng dụng.</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/tcp-ip-protocol.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documents/network/network"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Main Concept</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#intro" class="table-of-contents__link toc-highlight">Intro</a></li><li><a href="#structure" class="table-of-contents__link toc-highlight">Structure</a></li><li><a href="#advantage" class="table-of-contents__link toc-highlight">Advantage</a></li><li><a href="#application" class="table-of-contents__link toc-highlight">Application</a></li><li><a href="#usage-example" class="table-of-contents__link toc-highlight">Usage example</a></li><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How it works</a></li><li><a href="#protocols-in-the-tcpip-suite" class="table-of-contents__link toc-highlight">Protocols in the TCP/IP suite</a><ul><li><a href="#tcp" class="table-of-contents__link toc-highlight">TCP</a></li><li><a href="#udp" class="table-of-contents__link toc-highlight">UDP</a></li><li><a href="#ip" class="table-of-contents__link toc-highlight">IP</a></li><li><a href="#ftp" class="table-of-contents__link toc-highlight">FTP</a></li><li><a href="#smtp" class="table-of-contents__link toc-highlight">SMTP</a></li><li><a href="#dns" class="table-of-contents__link toc-highlight">DNS</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documents/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

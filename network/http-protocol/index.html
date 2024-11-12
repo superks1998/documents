@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-network docs-version-current docs-doc-page docs-doc-id-http-protocol" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.1">
+<title data-rh="true">HTTP Protocols | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/documents/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/documents/network/http-protocol"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-network-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-network-current"><meta data-rh="true" property="og:title" content="HTTP Protocols | My Site"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/documents/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/documents/network/http-protocol"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/network/http-protocol" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/documents/network/http-protocol" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/documents/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/documents/blog/atom.xml" title="My Site Atom Feed">
+
+
+
+
+
+<link rel="stylesheet" href="D:\Git\documents\src\global.css"><link rel="stylesheet" href="/documents/assets/css/styles.c7c307f8.css">
+<script src="/documents/assets/js/runtime~main.eca347f4.js" defer="defer"></script>
+<script src="/documents/assets/js/main.4cac51f0.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documents/"><div class="navbar__logo"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documents/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a class="navbar__item navbar__link" docspluginid="tab1" href="/documents/web/intro">Web</a><a class="navbar__item navbar__link" docspluginid="tab2" href="/documents/network/intro">Network</a><a class="navbar__item navbar__link" href="/documents/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/documents/network/http-protocol">HTTP Protocols</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/https-protocol">HTTPS Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/network-protocol">Network Protocols</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/network">Main Concept</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/documents/network/tcp-ip-protocol">TCP/IP Protocols</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documents/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">HTTP Protocols</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>HTTP Protocols</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<ul>
+<li>HTTP (Hypertext Transfer Protocol) là giao thức truyền tải siêu văn bản, cho phép client và server giao tiếp, chủ yếu dùng cho việc truyền tải dữ liệu web.</li>
+<li>HTTP được thiết kế để thực hiện các yêu cầu và phản hồi qua mạng Internet, cho phép các trang web, hình ảnh, và các tài liệu đa phương tiện được truy cập và hiển thị trên các trình duyệt web.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-concepts">Key Concepts<a href="#key-concepts" class="hash-link" aria-label="Direct link to Key Concepts" title="Direct link to Key Concepts">​</a></h2>
+<ul>
+<li><strong>Client-Server Model</strong>: HTTP hoạt động theo mô hình client-server, nơi client gửi yêu cầu (request) và server phản hồi (response).</li>
+<li><strong>Stateless Protocol</strong>: HTTP là giao thức không lưu trạng thái, nghĩa là mỗi yêu cầu là độc lập và server không giữ thông tin về các yêu cầu trước.</li>
+<li><strong>Methods (Phương thức)</strong>: Các phương thức HTTP như <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, <code>PATCH</code>, v.v., xác định hành động của client khi yêu cầu tài nguyên từ server.</li>
+<li><strong>HTTP Versions</strong>: HTTP có nhiều phiên bản như HTTP/1.0, HTTP/1.1, HTTP/2, và HTTP/3 với các tính năng cải thiện hiệu suất và bảo mật.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="http-versions">HTTP Versions<a href="#http-versions" class="hash-link" aria-label="Direct link to HTTP Versions" title="Direct link to HTTP Versions">​</a></h2>
+<ul>
+<li>
+<p>HTTP đã trải qua nhiều phiên bản phát triển nhằm cải thiện hiệu suất, độ tin cậy và bảo mật. Dưới đây là các phiên bản chính của HTTP và những cải tiến từng phiên bản mang lại:</p>
+</li>
+<li>
+<p><em><strong>HTTP/1.0</strong></em></p>
+<ul>
+<li><strong>Introduction</strong>: HTTP/1.0 là phiên bản đầu tiên chính thức được công bố vào năm 1996.</li>
+<li><strong>Key Characteristics</strong>:</li>
+<li><strong>Kết nối ngắt quãng (Non-persistent)</strong>: Mỗi yêu cầu HTTP mở một kết nối riêng với server và đóng ngay sau khi nhận được phản hồi.</li>
+<li><strong>Không hỗ trợ bộ nhớ đệm (Cache)</strong>: HTTP/1.0 không có quy tắc bộ nhớ đệm chuẩn, gây ảnh hưởng đến hiệu suất và tốc độ truy cập.</li>
+<li><strong>Limitations</strong>:</li>
+<li>Tốc độ chậm vì tạo kết nối mới cho mỗi yêu cầu.</li>
+<li>Gây lãng phí tài nguyên mạng, đặc biệt khi truy cập nhiều tệp (ví dụ: hình ảnh) trên cùng một trang.</li>
+</ul>
+</li>
+<li>
+<p><em><strong>HTTP/1.1</strong></em></p>
+<ul>
+<li><strong>Introduction</strong>: HTTP/1.1, ra đời năm 1997, là phiên bản được sử dụng rộng rãi nhất và vẫn được dùng đến ngày nay.</li>
+<li><strong>Key Characteristics</strong>:</li>
+<li><strong>Kết nối liên tục (Persistent Connections)</strong>: Cho phép giữ kết nối mở cho nhiều yêu cầu, giảm độ trễ và tăng hiệu suất.</li>
+<li><strong>Bộ nhớ đệm (Cache)</strong>: HTTP/1.1 bổ sung các header như <code>Cache-Control</code>, <code>ETag</code>, giúp kiểm soát và tăng cường tính năng bộ nhớ đệm.</li>
+<li><strong>Nén nội dung (Content Compression)</strong>: Hỗ trợ các loại mã hóa nội dung như <code>gzip</code>, giúp giảm kích thước tệp.</li>
+<li><strong>Pipeline Requests</strong>: Cho phép gửi nhiều yêu cầu cùng lúc mà không cần chờ phản hồi từ server, nhưng có hạn chế vì không xử lý song song tốt như HTTP/2.</li>
+<li><strong>Limitations</strong>:</li>
+<li>Vẫn tồn tại hiện tượng &quot;head-of-line blocking&quot; (tắc nghẽn tại đầu hàng), làm chậm toàn bộ hàng đợi khi có yêu cầu nào đó bị trì hoãn.</li>
+</ul>
+</li>
+<li>
+<p><em><strong>HTTP/2</strong></em></p>
+<ul>
+<li><strong>Introduction</strong>: HTTP/2 ra mắt năm 2015, nhằm tối ưu hóa hiệu suất dựa trên nền tảng HTTP/1.1.</li>
+<li><strong>Key Characteristics</strong>:</li>
+<li><strong>Nén header (Header Compression)</strong>: Dùng thuật toán <code>HPACK</code> để nén header, giảm kích thước yêu cầu và phản hồi.</li>
+<li><strong>Multiplexing</strong>: Cho phép gửi nhiều yêu cầu và nhận nhiều phản hồi cùng lúc trên cùng một kết nối TCP mà không gây tắc nghẽn hàng chờ.</li>
+<li><strong>Server Push</strong>: Cho phép server gửi tài nguyên bổ sung trước khi client yêu cầu (ví dụ: CSS, JavaScript), giảm độ trễ và tăng tốc tải trang.</li>
+<li><strong>Binary Framing</strong>: HTTP/2 chuyển từ định dạng văn bản sang nhị phân, giúp đọc và phân tích yêu cầu nhanh hơn.</li>
+<li><strong>Limitations</strong>:</li>
+<li>Vẫn sử dụng TCP làm giao thức nền, dẫn đến tình trạng &quot;head-of-line blocking&quot; ở mức TCP khi có gói tin bị mất.</li>
+</ul>
+</li>
+<li>
+<p><em><strong>HTTP/3</strong></em></p>
+<ul>
+<li><strong>Introduction</strong>: HTTP/3 là phiên bản mới nhất, phát triển dựa trên giao thức QUIC của Google, ra mắt năm 2020.</li>
+<li><strong>Key Characteristics</strong>:</li>
+<li><strong>Sử dụng giao thức QUIC (UDP-based)</strong>: HTTP/3 hoạt động trên giao thức QUIC, dựa trên UDP thay vì TCP, giúp giảm thiểu tình trạng &quot;head-of-line blocking&quot;.</li>
+<li><strong>Kết nối nhanh hơn</strong>: Tăng tốc độ kết nối và độ tin cậy cho các yêu cầu web, đặc biệt khi truyền tải dữ liệu qua các mạng không ổn định.</li>
+<li><strong>Cải thiện bảo mật</strong>: QUIC tích hợp sẵn mã hóa TLS 1.3, bảo mật ngay từ đầu mà không cần quá trình bắt tay (handshake) lâu như các phiên bản trước.</li>
+<li><strong>Stream-level Multiplexing</strong>: HTTP/3 cho phép xử lý nhiều luồng dữ liệu song song trên cùng một kết nối, giúp giảm độ trễ.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="comparison-of-http-versions">Comparison of HTTP Versions<a href="#comparison-of-http-versions" class="hash-link" aria-label="Direct link to Comparison of HTTP Versions" title="Direct link to Comparison of HTTP Versions">​</a></h3>
+<table><thead><tr><th>Version</th><th>Persistent Connection</th><th>Multiplexing</th><th>Header Compression</th><th>Transport Protocol</th><th>Server Push</th><th>Security</th></tr></thead><tbody><tr><td><strong>HTTP/1.0</strong></td><td>No</td><td>No</td><td>No</td><td>TCP</td><td>No</td><td>Basic (unencrypted)</td></tr><tr><td><strong>HTTP/1.1</strong></td><td>Yes</td><td>Limited (Pipeline)</td><td>Limited (<code>gzip</code>)</td><td>TCP</td><td>No</td><td>Improved with TLS</td></tr><tr><td><strong>HTTP/2</strong></td><td>Yes</td><td>Yes</td><td>Yes (<code>HPACK</code>)</td><td>TCP</td><td>Yes</td><td>Enhanced with TLS</td></tr><tr><td><strong>HTTP/3</strong></td><td>Yes</td><td>Yes</td><td>Yes</td><td>QUIC (UDP-based)</td><td>Yes</td><td>Built-in with QUIC</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-http-works">How HTTP Works<a href="#how-http-works" class="hash-link" aria-label="Direct link to How HTTP Works" title="Direct link to How HTTP Works">​</a></h2>
+<ul>
+<li>HTTP hoạt động bằng cách thiết lập một kết nối giữa client và server.</li>
+<li>Client gửi yêu cầu bằng các phương thức HTTP và server xử lý yêu cầu, sau đó gửi phản hồi chứa dữ liệu và mã trạng thái HTTP (HTTP status code) để xác định kết quả của yêu cầu.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="http-request">HTTP Request<a href="#http-request" class="hash-link" aria-label="Direct link to HTTP Request" title="Direct link to HTTP Request">​</a></h2>
+<ul>
+<li>
+<p><em><strong>Request Line</strong></em></p>
+<ul>
+<li><strong>Method</strong>: Phương thức HTTP xác định hành động, ví dụ: <code>GET</code>, <code>POST</code>, <code>DELETE</code>.</li>
+<li><strong>Request-URI</strong>: Đường dẫn hoặc tài nguyên client muốn truy cập.</li>
+<li><strong>HTTP Version</strong>: Phiên bản HTTP đang sử dụng (vd: <code>HTTP/1.1</code>, <code>HTTP/2</code>).</li>
+<li><strong>Ví dụ</strong>: <code>GET /home HTTP/1.1</code></li>
+</ul>
+</li>
+<li>
+<p><em><strong>Request Headers</strong></em></p>
+<ul>
+<li>Các header trong HTTP request cung cấp thông tin về client và yêu cầu. Bao gồm:<!-- -->
+<ul>
+<li>
+<p><strong>General Headers</strong>:</p>
+<ul>
+<li>
+<p><strong>Cache-Control</strong>: Quy định bộ nhớ đệm (cache) cho yêu cầu, như <code>no-cache</code>.</p>
+</li>
+<li>
+<p><strong>Connection</strong>: Kiểm soát kết nối (vd: <code>keep-alive</code> để duy trì kết nối lâu hơn).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Request Headers</strong>:</p>
+<ul>
+<li>
+<p><code>Host</code>: Tên miền của server (vd: <code>Host: example.com</code>).</p>
+</li>
+<li>
+<p><code>User-Agent</code>: Thông tin về client (trình duyệt, thiết bị).</p>
+</li>
+<li>
+<p><code>Accept</code>: Định dạng mong muốn từ server, như <code>application/json</code>.</p>
+</li>
+<li>
+<p><code>Accept-Language</code>: Ngôn ngữ ưu tiên của client.</p>
+</li>
+<li>
+<p><code>Accept-Encoding</code>: Phương pháp mã hóa mà client hỗ trợ.</p>
+</li>
+<li>
+<p><code>Referer</code>: URL dẫn đến yêu cầu hiện tại.</p>
+</li>
+<li>
+<p><code>Authorization</code>: Thông tin xác thực của client để đăng nhập.</p>
+</li>
+<li>
+<p><code>Cookie</code>: Dữ liệu phiên làm việc của client gửi kèm với mỗi request.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Entity Headers</strong>:</p>
+<ul>
+<li>
+<p>Thông tin về nội dung của request khi có dữ liệu đi kèm, chẳng hạn với <code>POST</code>, <code>PUT</code>:</p>
+<ul>
+<li>
+<p><code>Content-Type</code>: Định dạng của dữ liệu (vd: <code>application/json</code>).</p>
+</li>
+<li>
+<p><code>Content-Length</code>: Độ dài dữ liệu tính bằng byte.</p>
+</li>
+<li>
+<p><code>Content-Encoding</code>: Kiểu mã hóa nội dung.</p>
+</li>
+<li>
+<p><code>Content-Language</code>: Ngôn ngữ nội dung.</p>
+</li>
+<li>
+<p><code>Content-MD5</code>: Hash MD5 của nội dung để xác nhận tính toàn vẹn dữ liệu.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Request Body</strong></em></p>
+<ul>
+<li>Dữ liệu chính được gửi đi trong body, thường là với các phương thức <code>POST</code>, <code>PUT</code>, và <code>PATCH</code>.</li>
+<li>Có thể bao gồm JSON, XML, tệp tải lên, văn bản, hoặc các loại dữ liệu khác.</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Cookie (Dữ liệu Cookie)</strong></em></p>
+<ul>
+<li>
+<p>Client gửi các cookie đã nhận từ server trong các yêu cầu tiếp theo để duy trì phiên làm việc, chứa các thông tin như:</p>
+<ul>
+<li>
+<p><code>sessionId</code>: Mã định danh phiên.</p>
+</li>
+<li>
+<p><code>Expires</code>: Ngày hết hạn của cookie.</p>
+</li>
+<li>
+<p><code>Domain</code>: Phạm vi mà cookie áp dụng.</p>
+</li>
+<li>
+<p><code>Path</code>: Đường dẫn mà cookie được gửi kèm.</p>
+</li>
+<li>
+<p><code>Secure</code>: Cookie chỉ gửi qua HTTPS.</p>
+</li>
+<li>
+<p><code>HttpOnly</code>: Cookie không thể truy cập từ JavaScript.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Example HTTP request</strong></em>:</p>
+</li>
+</ul>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /api/data HTTP/1.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host: example.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Accept: application/json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Accept-Language: en-US</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Accept-Encoding: gzip, deflate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: Bearer eyJhbGciOi...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Cookie: sessionId=abc123; Path=/; Secure</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="http-response">HTTP Response<a href="#http-response" class="hash-link" aria-label="Direct link to HTTP Response" title="Direct link to HTTP Response">​</a></h2>
+<ul>
+<li>
+<p><em><strong>Status Line</strong></em></p>
+<ul>
+<li>
+<p>Dòng đầu tiên của HTTP response chứa:</p>
+<ul>
+<li>
+<p><strong>HTTP Version</strong>: Phiên bản HTTP server sử dụng, như <code>HTTP/1.1</code>.</p>
+</li>
+<li>
+<p><strong>Status Code</strong>: Mã trạng thái thể hiện kết quả của yêu cầu HTTP từ client. Các loại phổ biến:</p>
+<ul>
+<li>
+<p><code>1xx</code>: Thông tin (<code>Informational</code>) - Yêu cầu đã được tiếp nhận, cần thực hiện thêm các hành động.</p>
+</li>
+<li>
+<p><code>2xx</code>: Thành công (<code>Success</code>) - Yêu cầu đã  được xử lý thành công (ví dụ: <code>200 OK</code>).</p>
+</li>
+<li>
+<p><code>3xx</code>: Chuyển hướng (<code>Redirection</code>) - Cần thêm các bước để hoàn tất yêu cầu (ví dụ: <code>301 Moved Permanently</code>).</p>
+</li>
+<li>
+<p><code>4xx</code>: Lỗi từ phía client (<code>Client Error</code>) - Yêu cầu có lỗi từ phía client (ví dụ: <code>404 Not Found</code>).</p>
+</li>
+<li>
+<p><code>5xx</code>: Lỗi từ phía server (<code>Server Error</code>) - Server gặp sự cố trong khi xử lý yêu cầu (ví dụ: <code>500 Internal Server Error</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Reason Phrase</strong>: Mô tả ngắn gọn về mã trạng thái (ví dụ: <code>OK</code>, <code>Not Found</code>, <code>Internal Server Error</code>)<strong>Ví dụ</strong>: <code>HTTP/1.1 200 OK</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Response Headers</strong></em></p>
+<ul>
+<li>
+<p>Các header chứa thông tin về server và dữ liệu phản hồi:</p>
+<ul>
+<li>
+<p><strong>General Headers</strong></p>
+<ul>
+<li>
+<p><strong>Cache-Control</strong>: Xác định cách response được lưu trữ cache (ví dụ: <code>Cache-Control: no-cache</code>).</p>
+</li>
+<li>
+<p><strong>Connection</strong>: Quản lý kết nối (ví dụ: <code>keep-alive</code> để duy trì kết nối).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Response Headers</strong></p>
+<ul>
+<li>
+<p><strong>Server</strong>: Thông tin về server xử lý yêu cầu (vd: <code>Apache/2.4.1</code>).</p>
+</li>
+<li>
+<p><strong>Date</strong>: Thời gian server tạo ra response.</p>
+</li>
+<li>
+<p><strong>Set-Cookie</strong>: Cài đặt cookie để lưu trữ dữ liệu tạm thời hoặc thông tin phiên làm việc.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Entity Headers</strong></p>
+<ul>
+<li>
+<p>Thông tin về nội dung của response:</p>
+<ul>
+<li>
+<p><code>Content-Type</code>: Định dạng của nội dung (ví dụ: <code>text/html</code>, <code>application/json</code>).</p>
+</li>
+<li>
+<p><code>Content-Length</code>: Độ dài của nội dung tính bằng byte.</p>
+</li>
+<li>
+<p><code>Content-Encoding</code>: Mã hóa nội dung (ví dụ: gzip để nén dữ liệu).</p>
+</li>
+<li>
+<p><code>Content-Language</code>: Ngôn ngữ của nội dung (ví dụ: <code>en-US</code>).</p>
+</li>
+<li>
+<p><code>Last-Modified</code>: Ngày nội dung được sửa đổi lần cuối, hỗ trợ cache.</p>
+</li>
+<li>
+<p><code>ETag</code>: Chuỗi để định danh phiên bản nội dung, giúp phát hiện thay đổi dữ liệu.</p>
+</li>
+<li>
+<p><code>Expires</code>: Thời điểm hết hạn của response, giúp xác định thời điểm không còn hợp lệ.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>HTTP Headers for Security</strong></p>
+<ul>
+<li>
+<p><code>Strict-Transport-Security</code>: Áp dụng cho HTTPS để ngăn chặn việc chuyển hướng đến HTTP.</p>
+</li>
+<li>
+<p><code>Content-Security-Policy</code>: Giới hạn nguồn tài nguyên mà trình duyệt có thể tải về.</p>
+</li>
+<li>
+<p><code>X-Frame-Options</code>: Ngăn chặn clickjacking (ví dụ: <code>DENY</code>, <code>SAMEORIGIN</code>).</p>
+</li>
+<li>
+<p><code>X-XSS-Protection</code>: Bảo vệ chống lại tấn công XSS (ví dụ: <code>1; mode=block</code>).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Response Body</strong></em></p>
+<ul>
+<li>
+<p>Body là phần dữ liệu mà server trả về cho client và có thể chứa:</p>
+<ul>
+<li>
+<p>HTML của trang web</p>
+</li>
+<li>
+<p>JSON hoặc XML cho dữ liệu API</p>
+</li>
+<li>
+<p>File hoặc tài liệu (PDF, hình ảnh, v.v.)</p>
+</li>
+<li>
+<p>Nội dung nhị phân như âm thanh hoặc video</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tùy vào loại nội dung mà các tiêu đề (header) như Content-Type, Content-Encoding sẽ quyết định cách dữ liệu được xử lý.</p>
+</li>
+<li>
+<p><em><strong>Cookie (Dữ liệu Cookie)</strong></em></p>
+<ul>
+<li>
+<p>Các cookie được cài đ ặt trong header Set-Cookie của response, chứa thông tin như:</p>
+<ul>
+<li>
+<p>Tên và giá trị cookie (ví dụ: <code>sessionId=abc123</code>).</p>
+</li>
+<li>
+<p><code>Expires</code> hoặc <code>Max-Age</code>: Thời hạn sống của cookie.</p>
+</li>
+<li>
+<p><code>Domain</code>: Tên miền mà cookie áp dụng.</p>
+</li>
+<li>
+<p><code>Path</code>: Đường dẫn của cookie.</p>
+</li>
+<li>
+<p><code>Secure</code>: Cookie chỉ được truyền qua HTTPS.</p>
+</li>
+<li>
+<p><code>HttpOnly</code>: Cookie không thể truy cập từ JavaScript, giúp bảo vệ chống XSS.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em><strong>Example HTTP response</strong></em>:</p>
+</li>
+</ul>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token constant" style="color:#36acaa">HTTP</span><span class="token operator" style="color:#393A34">/</span><span class="token number" style="color:#36acaa">1.1</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">200</span><span class="token plain"> </span><span class="token constant" style="color:#36acaa">OK</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token known-class-name class-name">Date</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">Wed</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">01</span><span class="token plain"> </span><span class="token maybe-class-name">Nov</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2024</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">12</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">00</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">00</span><span class="token plain"> </span><span class="token constant" style="color:#36acaa">GMT</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token literal-property property" style="color:#36acaa">Server</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">Apache</span><span class="token operator" style="color:#393A34">/</span><span class="token number" style="color:#36acaa">2.4</span><span class="token number" style="color:#36acaa">.1</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token maybe-class-name">Unix</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token maybe-class-name">Content</span><span class="token operator" style="color:#393A34">-</span><span class="token maybe-class-name">Type</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> text</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">html</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> charset</span><span class="token operator" style="color:#393A34">=</span><span class="token constant" style="color:#36acaa">UTF</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">8</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token maybe-class-name">Content</span><span class="token operator" style="color:#393A34">-</span><span class="token maybe-class-name">Length</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">305</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token known-class-name class-name">Set</span><span class="token operator" style="color:#393A34">-</span><span class="token maybe-class-name">Cookie</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> sessionId</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">abc123</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token maybe-class-name">Path</span><span class="token operator" style="color:#393A34">=</span><span class="token operator" style="color:#393A34">/</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token maybe-class-name">HttpOnly</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token maybe-class-name">Cache</span><span class="token operator" style="color:#393A34">-</span><span class="token maybe-class-name">Control</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> no</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">cache</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token literal-property property" style="color:#36acaa">Expires</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">Wed</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">01</span><span class="token plain"> </span><span class="token maybe-class-name">Nov</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2024</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">13</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">00</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">00</span><span class="token plain"> </span><span class="token constant" style="color:#36acaa">GMT</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">html</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">head</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">title</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Example</span><span class="token plain"> </span><span class="token maybe-class-name">Page</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">title</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">head</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">body</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">h1</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Welcome</span><span class="token plain"> to the </span><span class="token maybe-class-name">Example</span><span class="token plain"> </span><span class="token maybe-class-name">Page</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">h1</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">p</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">This</span><span class="token plain"> is a sample </span><span class="token constant" style="color:#36acaa">HTTP</span><span class="token plain"> response</span><span class="token punctuation" style="color:#393A34">.</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">p</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">body</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">html</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advantages">Advantages<a href="#advantages" class="hash-link" aria-label="Direct link to Advantages" title="Direct link to Advantages">​</a></h2>
+<ul>
+<li><strong>Phổ biến và dễ sử dụng</strong>: HTTP là nền tảng của hầu hết các trang web và ứng dụng.</li>
+<li><strong>Dễ mở rộng</strong>: HTTP hỗ trợ nhiều định dạng dữ liệu và phương thức mở rộng.</li>
+<li><strong>Tương thích đa nền tảng</strong>: HTTP hoạt động trên mọi hệ điều hành và thiết bị có kết nối Internet.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="disadvantages">Disadvantages<a href="#disadvantages" class="hash-link" aria-label="Direct link to Disadvantages" title="Direct link to Disadvantages">​</a></h2>
+<ul>
+<li><strong>Không bảo mật</strong>: HTTP không mã hóa dữ liệu, khiến dữ liệu có thể bị đánh cắp hoặc thay đổi nếu không sử dụng HTTPS.</li>
+<li><strong>Hiệu suất thấp</strong>: Với HTTP/1.1, client phải thiết lập và ngắt kết nối liên tục, ảnh hưởng đến hiệu suất. HTTP/2 và HTTP/3 đã cải thiện vấn đề này nhưng vẫn còn hạn chế trong một số trường hợp.</li>
+<li><strong>Không lưu trạng thái</strong>: Do HTTP là stateless, mỗi request cần gửi đủ thông tin mà không dựa vào thông tin từ các request trước.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applications-of-http">Applications of HTTP<a href="#applications-of-http" class="hash-link" aria-label="Direct link to Applications of HTTP" title="Direct link to Applications of HTTP">​</a></h2>
+<p>HTTP là giao thức chính cho các ứng dụng web hiện đại, được sử dụng trong:</p>
+<ul>
+<li>Truy cập trang web, tải nội dung như văn bản, hình ảnh, video từ server về client.</li>
+<li>Trao đổi dữ liệu qua API, sử dụng các định dạng JSON hoặc XML.</li>
+<li>Các ứng dụng truyền thông, tải file, và sử dụng các dịch vụ dựa trên mạng.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-with-https">Security with HTTPS<a href="#security-with-https" class="hash-link" aria-label="Direct link to Security with HTTPS" title="Direct link to Security with HTTPS">​</a></h2>
+<p><strong>HTTPS</strong> là phiên bản bảo mật của HTTP, sử dụng SSL/TLS để mã hóa dữ liệu, giúp bảo vệ dữ liệu khỏi sự can thiệp của bên thứ ba. HTTPS được khuyến khích cho mọi trang web, đặc biệt là trang web liên quan đến bảo mật như ngân hàng và thanh toán trực tuyến.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/http-protocol.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documents/network/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Tutorial Intro</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documents/network/https-protocol"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">HTTPS Protocol</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#key-concepts" class="table-of-contents__link toc-highlight">Key Concepts</a></li><li><a href="#http-versions" class="table-of-contents__link toc-highlight">HTTP Versions</a><ul><li><a href="#comparison-of-http-versions" class="table-of-contents__link toc-highlight">Comparison of HTTP Versions</a></li></ul></li><li><a href="#how-http-works" class="table-of-contents__link toc-highlight">How HTTP Works</a></li><li><a href="#http-request" class="table-of-contents__link toc-highlight">HTTP Request</a></li><li><a href="#http-response" class="table-of-contents__link toc-highlight">HTTP Response</a></li><li><a href="#advantages" class="table-of-contents__link toc-highlight">Advantages</a></li><li><a href="#disadvantages" class="table-of-contents__link toc-highlight">Disadvantages</a></li><li><a href="#applications-of-http" class="table-of-contents__link toc-highlight">Applications of HTTP</a></li><li><a href="#security-with-https" class="table-of-contents__link toc-highlight">Security with HTTPS</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documents/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
