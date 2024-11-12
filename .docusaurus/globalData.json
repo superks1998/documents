@@ -1,0 +1,237 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "web": {
+      "path": "/documents/web",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/documents/web",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "CSS/css",
+              "path": "/documents/web/CSS/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "CSS/main-concept",
+              "path": "/documents/web/CSS/main-concept",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "CSS/property-important",
+              "path": "/documents/web/CSS/property-important",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Git/Git",
+              "path": "/documents/web/Git/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HTML/main-concept",
+              "path": "/documents/web/HTML/main-concept",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HTML/tag-important",
+              "path": "/documents/web/HTML/tag-important",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/documents/web/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Advanced/closure",
+              "path": "/documents/web/Javascript/Advanced/closure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Advanced/eventloop",
+              "path": "/documents/web/Javascript/Advanced/eventloop",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Advanced/scope",
+              "path": "/documents/web/Javascript/Advanced/scope",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Advanced/thamchieuthamtri",
+              "path": "/documents/web/Javascript/Advanced/thamchieuthamtri",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Advanced/this",
+              "path": "/documents/web/Javascript/Advanced/this",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/data-type",
+              "path": "/documents/web/Javascript/Basic New/data-type",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/Variable",
+              "path": "/documents/web/Javascript/Basic New/Variable",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic/Array",
+              "path": "/documents/web/Javascript/Basic/Array",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic/loop",
+              "path": "/documents/web/Javascript/Basic/loop",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic/SpreadRest",
+              "path": "/documents/web/Javascript/Basic/SpreadRest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic/String",
+              "path": "/documents/web/Javascript/Basic/String",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "OOP/oop",
+              "path": "/documents/web/OOP/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ReactJS/basic",
+              "path": "/documents/web/ReactJS/basic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ReactJS/hook",
+              "path": "/documents/web/ReactJS/hook",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ReactJS/plugin",
+              "path": "/documents/web/ReactJS/plugin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/documents/web/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/documents/web/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/documents/web/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/documents/web/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/documents/web/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/documents/web/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Typescript/Basic",
+              "path": "/documents/web/Typescript/Basic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Typescript/TypeAliasAndInterface",
+              "path": "/documents/web/Typescript/TypeAliasAndInterface",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/documents/web/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/documents/web/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
+    "network": {
+      "path": "/documents/network",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/documents/network",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "http-protocol",
+              "path": "/documents/network/http-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "https-protocol",
+              "path": "/documents/network/https-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/documents/network/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network",
+              "path": "/documents/network/network",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network-protocol",
+              "path": "/documents/network/network-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tcp-ip-protocol",
+              "path": "/documents/network/tcp-ip-protocol",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/documents/network/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

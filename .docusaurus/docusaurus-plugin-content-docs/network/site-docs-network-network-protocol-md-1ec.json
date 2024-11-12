@@ -1,0 +1,24 @@
+{
+  "id": "network-protocol",
+  "title": "Network Protocols",
+  "description": "Intro",
+  "source": "@site/docs/network/network-protocol.md",
+  "sourceDirName": ".",
+  "slug": "/network-protocol",
+  "permalink": "/documents/network/network-protocol",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/network-protocol.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HTTPS Protocol",
+    "permalink": "/documents/network/https-protocol"
+  },
+  "next": {
+    "title": "Main Concept",
+    "permalink": "/documents/network/network"
+  }
+}

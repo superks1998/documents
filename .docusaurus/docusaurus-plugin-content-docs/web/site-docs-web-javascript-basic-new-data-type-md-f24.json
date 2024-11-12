@@ -1,0 +1,27 @@
+{
+  "id": "Javascript/Basic New/data-type",
+  "title": "Data Types",
+  "description": "Kiểu Dữ Liệu (Data Types) trong JavaScript",
+  "source": "@site/docs/web/Javascript/Basic New/data-type.md",
+  "sourceDirName": "Javascript/Basic New",
+  "slug": "/Javascript/Basic New/data-type",
+  "permalink": "/documents/web/Javascript/Basic New/data-type",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic New/data-type.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variable",
+    "permalink": "/documents/web/Javascript/Basic New/Variable"
+  },
+  "next": {
+    "title": "OOP",
+    "permalink": "/documents/web/OOP/"
+  }
+}

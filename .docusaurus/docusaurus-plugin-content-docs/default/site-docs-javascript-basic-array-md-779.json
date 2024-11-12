@@ -1,0 +1,27 @@
+{
+  "id": "Javascript/Basic/Array",
+  "title": "Array Method",
+  "description": "Kiểm tra Array",
+  "source": "@site/docs/Javascript/Basic/Array.md",
+  "sourceDirName": "Javascript/Basic",
+  "slug": "/Javascript/Basic/Array",
+  "permalink": "/documents/docs/Javascript/Basic/Array",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Javascript/Basic/Array.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Spread, Rest Operator and Destructuring",
+    "permalink": "/documents/docs/Javascript/Basic/SpreadRest"
+  },
+  "next": {
+    "title": "String and Number Method",
+    "permalink": "/documents/docs/Javascript/Basic/String"
+  }
+}

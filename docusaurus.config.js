@@ -32,28 +32,39 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
+      '@docusaurus/preset-classic',
+      {
+        // Các cấu hình preset khác, nếu cần
+        docs: false, // Đặt thành false để tránh xung đột với plugin docs
+      },
     ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'web',                       // Định danh duy nhất cho tab1
+        path: 'docs/web',                // Đường dẫn tới thư mục tài liệu cho tab1
+        routeBasePath: 'web',            // URL của tab1
+        sidebarPath: require.resolve('./sidebars1.js'), // Sidebar cho tab1
+        editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'network',                       // Định danh duy nhất cho network
+        path: 'docs/network',                // Đường dẫn tới thư mục tài liệu cho network
+        routeBasePath: 'network',            // URL của network
+        sidebarPath: require.resolve('./sidebars2.js'), // Sidebar cho network
+        editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+    ],
+  ],
+
+  stylesheets: [
+    require.resolve('./src/global.css'), // Đường dẫn tới global.css
   ],
 
   themeConfig:
@@ -69,10 +80,16 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/web/intro', // Đường dẫn đến tài liệu đầu tiên của tab1
+            label: 'Web',
             position: 'left',
-            label: 'Tutorial',
+            docsPluginId: 'tab1', // Phải trùng với id đã định trong plugin
+          },
+          {
+            to: '/network/intro', // Đường dẫn đến tài liệu đầu tiên của tab2
+            label: 'Network',
+            position: 'left',
+            docsPluginId: 'tab2', // Phải trùng với id đã định trong plugin
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

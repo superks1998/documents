@@ -1,0 +1,94 @@
+{
+  "pluginId": "network",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Tutorial Intro",
+        "href": "/documents/network/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "HTTP Protocols",
+        "href": "/documents/network/http-protocol",
+        "docId": "http-protocol",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "HTTPS Protocol",
+        "href": "/documents/network/https-protocol",
+        "docId": "https-protocol",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Network Protocols",
+        "href": "/documents/network/network-protocol",
+        "docId": "network-protocol",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Main Concept",
+        "href": "/documents/network/network",
+        "docId": "network",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "TCP/IP Protocols",
+        "href": "/documents/network/tcp-ip-protocol",
+        "docId": "tcp-ip-protocol",
+        "unlisted": false
+      }
+    ]
+  },
+  "docs": {
+    "http-protocol": {
+      "id": "http-protocol",
+      "title": "HTTP Protocols",
+      "description": "Introduction",
+      "sidebar": "tutorialSidebar"
+    },
+    "https-protocol": {
+      "id": "https-protocol",
+      "title": "HTTPS Protocol",
+      "description": "Introduction",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Tutorial Intro",
+      "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "sidebar": "tutorialSidebar"
+    },
+    "network": {
+      "id": "network",
+      "title": "Main Concept",
+      "description": "Network",
+      "sidebar": "tutorialSidebar"
+    },
+    "network-protocol": {
+      "id": "network-protocol",
+      "title": "Network Protocols",
+      "description": "Intro",
+      "sidebar": "tutorialSidebar"
+    },
+    "tcp-ip-protocol": {
+      "id": "tcp-ip-protocol",
+      "title": "TCP/IP Protocols",
+      "description": "Intro",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

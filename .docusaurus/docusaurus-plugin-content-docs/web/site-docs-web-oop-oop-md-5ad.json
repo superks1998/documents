@@ -1,0 +1,24 @@
+{
+  "id": "OOP/oop",
+  "title": "OOP",
+  "description": "4 tính chất",
+  "source": "@site/docs/web/OOP/oop.md",
+  "sourceDirName": "OOP",
+  "slug": "/OOP/",
+  "permalink": "/documents/web/OOP/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/OOP/oop.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Data Types",
+    "permalink": "/documents/web/Javascript/Basic New/data-type"
+  },
+  "next": {
+    "title": "Basic",
+    "permalink": "/documents/web/ReactJS/basic"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Javascript/Advanced/eventloop",
+  "title": "Scope - Phạm vi",
+  "description": "Nội dung",
+  "source": "@site/docs/web/Javascript/Advanced/eventloop.md",
+  "sourceDirName": "Javascript/Advanced",
+  "slug": "/Javascript/Advanced/eventloop",
+  "permalink": "/documents/web/Javascript/Advanced/eventloop",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/eventloop.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Closure (Hàm bao đóng)",
+    "permalink": "/documents/web/Javascript/Advanced/closure"
+  },
+  "next": {
+    "title": "Scope - Phạm vi",
+    "permalink": "/documents/web/Javascript/Advanced/scope"
+  }
+}

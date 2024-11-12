@@ -1,0 +1,24 @@
+{
+  "id": "ReactJS/basic",
+  "title": "Basic",
+  "description": "React.createElement()",
+  "source": "@site/docs/web/ReactJS/basic.md",
+  "sourceDirName": "ReactJS",
+  "slug": "/ReactJS/basic",
+  "permalink": "/documents/web/ReactJS/basic",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/ReactJS/basic.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OOP",
+    "permalink": "/documents/web/OOP/"
+  },
+  "next": {
+    "title": "Hook",
+    "permalink": "/documents/web/ReactJS/hook"
+  }
+}

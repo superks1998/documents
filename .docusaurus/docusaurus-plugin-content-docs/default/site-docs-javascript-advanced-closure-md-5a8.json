@@ -1,0 +1,27 @@
+{
+  "id": "Javascript/Advanced/closure",
+  "title": "Closure (Hàm bao đóng)",
+  "description": "Ứng dụng",
+  "source": "@site/docs/Javascript/Advanced/closure.md",
+  "sourceDirName": "Javascript/Advanced",
+  "slug": "/Javascript/Advanced/closure",
+  "permalink": "/documents/docs/Javascript/Advanced/closure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Javascript/Advanced/closure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tag Important",
+    "permalink": "/documents/docs/HTML/tag-important"
+  },
+  "next": {
+    "title": "Scope - Phạm vi",
+    "permalink": "/documents/docs/Javascript/Advanced/eventloop"
+  }
+}

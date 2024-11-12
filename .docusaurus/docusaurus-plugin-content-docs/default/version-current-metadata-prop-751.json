@@ -1,0 +1,460 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Tutorial Intro",
+        "href": "/documents/docs/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "Tutorial - Basics",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Create a Page",
+            "href": "/documents/docs/tutorial-basics/create-a-page",
+            "docId": "tutorial-basics/create-a-page",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Create a Document",
+            "href": "/documents/docs/tutorial-basics/create-a-document",
+            "docId": "tutorial-basics/create-a-document",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Create a Blog Post",
+            "href": "/documents/docs/tutorial-basics/create-a-blog-post",
+            "docId": "tutorial-basics/create-a-blog-post",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Markdown Features",
+            "href": "/documents/docs/tutorial-basics/markdown-features",
+            "docId": "tutorial-basics/markdown-features",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Deploy your site",
+            "href": "/documents/docs/tutorial-basics/deploy-your-site",
+            "docId": "tutorial-basics/deploy-your-site",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Congratulations!",
+            "href": "/documents/docs/tutorial-basics/congratulations",
+            "docId": "tutorial-basics/congratulations",
+            "unlisted": false
+          }
+        ],
+        "href": "/documents/docs/category/tutorial---basics"
+      },
+      {
+        "type": "category",
+        "label": "CSS",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Main Concept",
+            "href": "/documents/docs/CSS/main-concept",
+            "docId": "CSS/main-concept",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Property Important",
+            "href": "/documents/docs/CSS/property-important",
+            "docId": "CSS/property-important",
+            "unlisted": false
+          }
+        ],
+        "href": "/documents/docs/CSS/"
+      },
+      {
+        "type": "link",
+        "label": "Git",
+        "href": "/documents/docs/Git/",
+        "docId": "Git/Git",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "HTML",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Main Concept",
+            "href": "/documents/docs/HTML/main-concept",
+            "docId": "HTML/main-concept",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Tag Important",
+            "href": "/documents/docs/HTML/tag-important",
+            "docId": "HTML/tag-important",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Javascript",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "Advanced",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Closure (Hàm bao đóng)",
+                "href": "/documents/docs/Javascript/Advanced/closure",
+                "docId": "Javascript/Advanced/closure",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Scope - Phạm vi",
+                "href": "/documents/docs/Javascript/Advanced/eventloop",
+                "docId": "Javascript/Advanced/eventloop",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Scope - Phạm vi",
+                "href": "/documents/docs/Javascript/Advanced/scope",
+                "docId": "Javascript/Advanced/scope",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Value types & Reference types (Tham trị và tham chiếu)",
+                "href": "/documents/docs/Javascript/Advanced/thamchieuthamtri",
+                "docId": "Javascript/Advanced/thamchieuthamtri",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "This, bind(), call()",
+                "href": "/documents/docs/Javascript/Advanced/this",
+                "docId": "Javascript/Advanced/this",
+                "unlisted": false
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Basic",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Spread, Rest Operator and Destructuring",
+                "href": "/documents/docs/Javascript/Basic/SpreadRest",
+                "docId": "Javascript/Basic/SpreadRest",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Array Method",
+                "href": "/documents/docs/Javascript/Basic/Array",
+                "docId": "Javascript/Basic/Array",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "String and Number Method",
+                "href": "/documents/docs/Javascript/Basic/String",
+                "docId": "Javascript/Basic/String",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Loop",
+                "href": "/documents/docs/Javascript/Basic/loop",
+                "docId": "Javascript/Basic/loop",
+                "unlisted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Network",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Concept",
+            "href": "/documents/docs/Network/Concept",
+            "docId": "Network/Concept",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "OOP",
+        "href": "/documents/docs/OOP/",
+        "docId": "OOP/oop",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "ReactJS",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Basic",
+            "href": "/documents/docs/ReactJS/basic",
+            "docId": "ReactJS/basic",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Hook",
+            "href": "/documents/docs/ReactJS/hook",
+            "docId": "ReactJS/hook",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Plugin",
+            "href": "/documents/docs/ReactJS/plugin",
+            "docId": "ReactJS/plugin",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Typescript",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "TypeBasic",
+            "href": "/documents/docs/Typescript/Basic",
+            "docId": "Typescript/Basic",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "So sánh Type Alias vs Interface",
+            "href": "/documents/docs/Typescript/TypeAliasAndInterface",
+            "docId": "Typescript/TypeAliasAndInterface",
+            "unlisted": false
+          }
+        ]
+      }
+    ]
+  },
+  "docs": {
+    "CSS/css": {
+      "id": "CSS/css",
+      "title": "CSS",
+      "description": "Sử dụng CSS độc lập trong component",
+      "sidebar": "tutorialSidebar"
+    },
+    "CSS/main-concept": {
+      "id": "CSS/main-concept",
+      "title": "Main Concept",
+      "description": "CSS",
+      "sidebar": "tutorialSidebar"
+    },
+    "CSS/property-important": {
+      "id": "CSS/property-important",
+      "title": "Property Important",
+      "description": "Layout Properties",
+      "sidebar": "tutorialSidebar"
+    },
+    "Git/Git": {
+      "id": "Git/Git",
+      "title": "Git",
+      "description": "Các khái niệm",
+      "sidebar": "tutorialSidebar"
+    },
+    "HTML/main-concept": {
+      "id": "HTML/main-concept",
+      "title": "Main Concept",
+      "description": "HTML",
+      "sidebar": "tutorialSidebar"
+    },
+    "HTML/tag-important": {
+      "id": "HTML/tag-important",
+      "title": "Tag Important",
+      "description": "Basic Tags",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Tutorial Intro",
+      "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Advanced/closure": {
+      "id": "Javascript/Advanced/closure",
+      "title": "Closure (Hàm bao đóng)",
+      "description": "Ứng dụng",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Advanced/eventloop": {
+      "id": "Javascript/Advanced/eventloop",
+      "title": "Scope - Phạm vi",
+      "description": "Nội dung",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Advanced/scope": {
+      "id": "Javascript/Advanced/scope",
+      "title": "Scope - Phạm vi",
+      "description": "Nội dung",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Advanced/thamchieuthamtri": {
+      "id": "Javascript/Advanced/thamchieuthamtri",
+      "title": "Value types & Reference types (Tham trị và tham chiếu)",
+      "description": "Phân loại các kiểu dữ liệu",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Advanced/this": {
+      "id": "Javascript/Advanced/this",
+      "title": "This, bind(), call()",
+      "description": "Object",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Basic/Array": {
+      "id": "Javascript/Basic/Array",
+      "title": "Array Method",
+      "description": "Kiểm tra Array",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Basic/loop": {
+      "id": "Javascript/Basic/loop",
+      "title": "Loop",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Basic/SpreadRest": {
+      "id": "Javascript/Basic/SpreadRest",
+      "title": "Spread, Rest Operator and Destructuring",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "Javascript/Basic/String": {
+      "id": "Javascript/Basic/String",
+      "title": "String and Number Method",
+      "description": "Find index",
+      "sidebar": "tutorialSidebar"
+    },
+    "Network/Concept": {
+      "id": "Network/Concept",
+      "title": "Concept",
+      "description": "Computer Network",
+      "sidebar": "tutorialSidebar"
+    },
+    "OOP/oop": {
+      "id": "OOP/oop",
+      "title": "OOP",
+      "description": "4 tính chất",
+      "sidebar": "tutorialSidebar"
+    },
+    "ReactJS/basic": {
+      "id": "ReactJS/basic",
+      "title": "Basic",
+      "description": "React.createElement()",
+      "sidebar": "tutorialSidebar"
+    },
+    "ReactJS/hook": {
+      "id": "ReactJS/hook",
+      "title": "Hook",
+      "description": "useState",
+      "sidebar": "tutorialSidebar"
+    },
+    "ReactJS/plugin": {
+      "id": "ReactJS/plugin",
+      "title": "Plugin",
+      "description": "npm & npx & yarn",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/congratulations": {
+      "id": "tutorial-basics/congratulations",
+      "title": "Congratulations!",
+      "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/create-a-blog-post": {
+      "id": "tutorial-basics/create-a-blog-post",
+      "title": "Create a Blog Post",
+      "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/create-a-document": {
+      "id": "tutorial-basics/create-a-document",
+      "title": "Create a Document",
+      "description": "Documents are groups of pages connected through:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/create-a-page": {
+      "id": "tutorial-basics/create-a-page",
+      "title": "Create a Page",
+      "description": "Add Markdown or React files to src/pages to create a standalone page:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/deploy-your-site": {
+      "id": "tutorial-basics/deploy-your-site",
+      "title": "Deploy your site",
+      "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/markdown-features": {
+      "id": "tutorial-basics/markdown-features",
+      "title": "Markdown Features",
+      "description": "Docusaurus supports Markdown and a few additional features.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Typescript/Basic": {
+      "id": "Typescript/Basic",
+      "title": "TypeBasic",
+      "description": "Primitive Data Type",
+      "sidebar": "tutorialSidebar"
+    },
+    "Typescript/TypeAliasAndInterface": {
+      "id": "Typescript/TypeAliasAndInterface",
+      "title": "So sánh Type Alias vs Interface",
+      "description": "- Type Alias: \"A type alias is exactly that - a name for any type\"",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

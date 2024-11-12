@@ -1,0 +1,27 @@
+{
+  "id": "Javascript/Advanced/scope",
+  "title": "Scope - Phạm vi",
+  "description": "Nội dung",
+  "source": "@site/docs/web/Javascript/Advanced/scope.md",
+  "sourceDirName": "Javascript/Advanced",
+  "slug": "/Javascript/Advanced/scope",
+  "permalink": "/documents/web/Javascript/Advanced/scope",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/scope.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Scope - Phạm vi",
+    "permalink": "/documents/web/Javascript/Advanced/eventloop"
+  },
+  "next": {
+    "title": "Value types & Reference types (Tham trị và tham chiếu)",
+    "permalink": "/documents/web/Javascript/Advanced/thamchieuthamtri"
+  }
+}

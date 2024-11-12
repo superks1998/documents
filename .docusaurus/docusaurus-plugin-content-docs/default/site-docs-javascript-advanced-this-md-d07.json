@@ -1,0 +1,24 @@
+{
+  "id": "Javascript/Advanced/this",
+  "title": "This, bind(), call()",
+  "description": "Object",
+  "source": "@site/docs/Javascript/Advanced/this.md",
+  "sourceDirName": "Javascript/Advanced",
+  "slug": "/Javascript/Advanced/this",
+  "permalink": "/documents/docs/Javascript/Advanced/this",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Javascript/Advanced/this.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Value types & Reference types (Tham trị và tham chiếu)",
+    "permalink": "/documents/docs/Javascript/Advanced/thamchieuthamtri"
+  },
+  "next": {
+    "title": "Spread, Rest Operator and Destructuring",
+    "permalink": "/documents/docs/Javascript/Basic/SpreadRest"
+  }
+}

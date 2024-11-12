@@ -1,0 +1,24 @@
+{
+  "id": "ReactJS/hook",
+  "title": "Hook",
+  "description": "useState",
+  "source": "@site/docs/web/ReactJS/hook.md",
+  "sourceDirName": "ReactJS",
+  "slug": "/ReactJS/hook",
+  "permalink": "/documents/web/ReactJS/hook",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/ReactJS/hook.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic",
+    "permalink": "/documents/web/ReactJS/basic"
+  },
+  "next": {
+    "title": "Plugin",
+    "permalink": "/documents/web/ReactJS/plugin"
+  }
+}

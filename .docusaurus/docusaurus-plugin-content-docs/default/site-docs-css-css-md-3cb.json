@@ -1,0 +1,24 @@
+{
+  "id": "CSS/css",
+  "title": "CSS",
+  "description": "Sử dụng CSS độc lập trong component",
+  "source": "@site/docs/CSS/css.md",
+  "sourceDirName": "CSS",
+  "slug": "/CSS/",
+  "permalink": "/documents/docs/CSS/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/CSS/css.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Congratulations!",
+    "permalink": "/documents/docs/tutorial-basics/congratulations"
+  },
+  "next": {
+    "title": "Main Concept",
+    "permalink": "/documents/docs/CSS/main-concept"
+  }
+}

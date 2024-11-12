@@ -1,0 +1,1563 @@
+{
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/documents/blog/welcome",
+            "source": "@site/blog/2021-08-26-welcome/index.md",
+            "title": "Welcome",
+            "description": "Docusaurus blogging features are powered by the blog plugin.",
+            "date": "2021-08-26T00:00:00.000Z",
+            "formattedDate": "August 26, 2021",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/documents/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/documents/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/documents/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.405,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              },
+              {
+                "name": "Yangshun Tay",
+                "title": "Front End Engineer @ Facebook",
+                "url": "https://github.com/yangshun",
+                "imageURL": "https://github.com/yangshun.png",
+                "key": "yangshun"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "slorber",
+                "yangshun"
+              ],
+              "tags": [
+                "facebook",
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "unlisted": false,
+            "nextItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/documents/blog/mdx-blog-post"
+            }
+          },
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+        },
+        {
+          "id": "mdx-blog-post",
+          "metadata": {
+            "permalink": "/documents/blog/mdx-blog-post",
+            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
+            "title": "MDX Blog Post",
+            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
+            "date": "2021-08-01T00:00:00.000Z",
+            "formattedDate": "August 1, 2021",
+            "tags": [
+              {
+                "label": "docusaurus",
+                "permalink": "/documents/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              }
+            ],
+            "frontMatter": {
+              "slug": "mdx-blog-post",
+              "title": "MDX Blog Post",
+              "authors": [
+                "slorber"
+              ],
+              "tags": [
+                "docusaurus"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/documents/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Long Blog Post",
+              "permalink": "/documents/blog/long-blog-post"
+            }
+          },
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
+        },
+        {
+          "id": "long-blog-post",
+          "metadata": {
+            "permalink": "/documents/blog/long-blog-post",
+            "source": "@site/blog/2019-05-29-long-blog-post.md",
+            "title": "Long Blog Post",
+            "description": "This is the summary of a very long blog post,",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/documents/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/documents/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 2.05,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Endilie Yacop Sucipto",
+                "title": "Maintainer of Docusaurus",
+                "url": "https://github.com/endiliey",
+                "imageURL": "https://github.com/endiliey.png",
+                "key": "endi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "long-blog-post",
+              "title": "Long Blog Post",
+              "authors": "endi",
+              "tags": [
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/documents/blog/mdx-blog-post"
+            },
+            "nextItem": {
+              "title": "First Blog Post",
+              "permalink": "/documents/blog/first-blog-post"
+            }
+          },
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        },
+        {
+          "id": "first-blog-post",
+          "metadata": {
+            "permalink": "/documents/blog/first-blog-post",
+            "source": "@site/blog/2019-05-28-first-blog-post.md",
+            "title": "First Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/documents/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/documents/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "first-blog-post",
+              "title": "First Blog Post",
+              "authors": {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              },
+              "tags": [
+                "hola",
+                "docusaurus"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Long Blog Post",
+              "permalink": "/documents/blog/long-blog-post"
+            }
+          },
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "metadata": {
+            "permalink": "/documents/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 4,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/documents/blog/tags/facebook": {
+          "label": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/documents/blog/tags/facebook",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/documents/blog/tags/facebook",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/documents/blog/tags/hello": {
+          "label": "hello",
+          "items": [
+            "welcome",
+            "long-blog-post"
+          ],
+          "permalink": "/documents/blog/tags/hello",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "long-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/documents/blog/tags/hello",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/documents/blog/tags/docusaurus": {
+          "label": "docusaurus",
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "permalink": "/documents/blog/tags/docusaurus",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "mdx-blog-post",
+                "long-blog-post",
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/documents/blog/tags/docusaurus",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/documents/blog/tags/hola": {
+          "label": "hola",
+          "items": [
+            "first-blog-post"
+          ],
+          "permalink": "/documents/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/documents/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        }
+      },
+      "blogTagsListPath": "/documents/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/documents/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/documents/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        },
+        "unlisted": false
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-plugin-content-docs": {
+    "web": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/documents/web",
+          "tagsPath": "/documents/web/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs-web/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "D:\\Git\\documents\\sidebars1.js",
+          "contentPath": "D:\\Git\\documents\\docs\\web",
+          "contentPathLocalized": "D:\\Git\\documents\\i18n\\en\\docusaurus-plugin-content-docs-web\\current",
+          "docs": [
+            {
+              "id": "CSS/css",
+              "title": "CSS",
+              "description": "Sử dụng CSS độc lập trong component",
+              "source": "@site/docs/web/CSS/css.md",
+              "sourceDirName": "CSS",
+              "slug": "/CSS/",
+              "permalink": "/documents/web/CSS/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/CSS/css.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Congratulations!",
+                "permalink": "/documents/web/tutorial-basics/congratulations"
+              },
+              "next": {
+                "title": "Main Concept",
+                "permalink": "/documents/web/CSS/main-concept"
+              }
+            },
+            {
+              "id": "CSS/main-concept",
+              "title": "Main Concept",
+              "description": "CSS",
+              "source": "@site/docs/web/CSS/main-concept.md",
+              "sourceDirName": "CSS",
+              "slug": "/CSS/main-concept",
+              "permalink": "/documents/web/CSS/main-concept",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/CSS/main-concept.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "CSS",
+                "permalink": "/documents/web/CSS/"
+              },
+              "next": {
+                "title": "Property Important",
+                "permalink": "/documents/web/CSS/property-important"
+              }
+            },
+            {
+              "id": "CSS/property-important",
+              "title": "Property Important",
+              "description": "Layout Properties",
+              "source": "@site/docs/web/CSS/property-important.md",
+              "sourceDirName": "CSS",
+              "slug": "/CSS/property-important",
+              "permalink": "/documents/web/CSS/property-important",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/CSS/property-important.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Main Concept",
+                "permalink": "/documents/web/CSS/main-concept"
+              },
+              "next": {
+                "title": "Git",
+                "permalink": "/documents/web/Git/"
+              }
+            },
+            {
+              "id": "Git/Git",
+              "title": "Git",
+              "description": "Các khái niệm",
+              "source": "@site/docs/web/Git/Git.md",
+              "sourceDirName": "Git",
+              "slug": "/Git/",
+              "permalink": "/documents/web/Git/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Git/Git.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Property Important",
+                "permalink": "/documents/web/CSS/property-important"
+              },
+              "next": {
+                "title": "Main Concept",
+                "permalink": "/documents/web/HTML/main-concept"
+              }
+            },
+            {
+              "id": "HTML/main-concept",
+              "title": "Main Concept",
+              "description": "HTML",
+              "source": "@site/docs/web/HTML/main-concept.md",
+              "sourceDirName": "HTML",
+              "slug": "/HTML/main-concept",
+              "permalink": "/documents/web/HTML/main-concept",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/HTML/main-concept.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Git",
+                "permalink": "/documents/web/Git/"
+              },
+              "next": {
+                "title": "Tag Important",
+                "permalink": "/documents/web/HTML/tag-important"
+              }
+            },
+            {
+              "id": "HTML/tag-important",
+              "title": "Tag Important",
+              "description": "Basic Tags",
+              "source": "@site/docs/web/HTML/tag-important.md",
+              "sourceDirName": "HTML",
+              "slug": "/HTML/tag-important",
+              "permalink": "/documents/web/HTML/tag-important",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/HTML/tag-important.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Main Concept",
+                "permalink": "/documents/web/HTML/main-concept"
+              },
+              "next": {
+                "title": "Closure (Hàm bao đóng)",
+                "permalink": "/documents/web/Javascript/Advanced/closure"
+              }
+            },
+            {
+              "id": "intro",
+              "title": "Tutorial Intro",
+              "description": "Let's discover Docusaurus in less than 5 minutes.",
+              "source": "@site/docs/web/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/documents/web/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Tutorial - Basics",
+                "permalink": "/documents/web/category/tutorial---basics"
+              }
+            },
+            {
+              "id": "Javascript/Advanced/closure",
+              "title": "Closure (Hàm bao đóng)",
+              "description": "Ứng dụng",
+              "source": "@site/docs/web/Javascript/Advanced/closure.md",
+              "sourceDirName": "Javascript/Advanced",
+              "slug": "/Javascript/Advanced/closure",
+              "permalink": "/documents/web/Javascript/Advanced/closure",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/closure.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tag Important",
+                "permalink": "/documents/web/HTML/tag-important"
+              },
+              "next": {
+                "title": "Scope - Phạm vi",
+                "permalink": "/documents/web/Javascript/Advanced/eventloop"
+              }
+            },
+            {
+              "id": "Javascript/Advanced/eventloop",
+              "title": "Scope - Phạm vi",
+              "description": "Nội dung",
+              "source": "@site/docs/web/Javascript/Advanced/eventloop.md",
+              "sourceDirName": "Javascript/Advanced",
+              "slug": "/Javascript/Advanced/eventloop",
+              "permalink": "/documents/web/Javascript/Advanced/eventloop",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/eventloop.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Closure (Hàm bao đóng)",
+                "permalink": "/documents/web/Javascript/Advanced/closure"
+              },
+              "next": {
+                "title": "Scope - Phạm vi",
+                "permalink": "/documents/web/Javascript/Advanced/scope"
+              }
+            },
+            {
+              "id": "Javascript/Advanced/scope",
+              "title": "Scope - Phạm vi",
+              "description": "Nội dung",
+              "source": "@site/docs/web/Javascript/Advanced/scope.md",
+              "sourceDirName": "Javascript/Advanced",
+              "slug": "/Javascript/Advanced/scope",
+              "permalink": "/documents/web/Javascript/Advanced/scope",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/scope.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Scope - Phạm vi",
+                "permalink": "/documents/web/Javascript/Advanced/eventloop"
+              },
+              "next": {
+                "title": "Value types & Reference types (Tham trị và tham chiếu)",
+                "permalink": "/documents/web/Javascript/Advanced/thamchieuthamtri"
+              }
+            },
+            {
+              "id": "Javascript/Advanced/thamchieuthamtri",
+              "title": "Value types & Reference types (Tham trị và tham chiếu)",
+              "description": "Phân loại các kiểu dữ liệu",
+              "source": "@site/docs/web/Javascript/Advanced/thamchieuthamtri.md",
+              "sourceDirName": "Javascript/Advanced",
+              "slug": "/Javascript/Advanced/thamchieuthamtri",
+              "permalink": "/documents/web/Javascript/Advanced/thamchieuthamtri",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/thamchieuthamtri.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Scope - Phạm vi",
+                "permalink": "/documents/web/Javascript/Advanced/scope"
+              },
+              "next": {
+                "title": "This, bind(), call()",
+                "permalink": "/documents/web/Javascript/Advanced/this"
+              }
+            },
+            {
+              "id": "Javascript/Advanced/this",
+              "title": "This, bind(), call()",
+              "description": "Object",
+              "source": "@site/docs/web/Javascript/Advanced/this.md",
+              "sourceDirName": "Javascript/Advanced",
+              "slug": "/Javascript/Advanced/this",
+              "permalink": "/documents/web/Javascript/Advanced/this",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Advanced/this.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Value types & Reference types (Tham trị và tham chiếu)",
+                "permalink": "/documents/web/Javascript/Advanced/thamchieuthamtri"
+              },
+              "next": {
+                "title": "Spread, Rest Operator and Destructuring",
+                "permalink": "/documents/web/Javascript/Basic/SpreadRest"
+              }
+            },
+            {
+              "id": "Javascript/Basic New/data-type",
+              "title": "Data Types",
+              "description": "Kiểu Dữ Liệu (Data Types) trong JavaScript",
+              "source": "@site/docs/web/Javascript/Basic New/data-type.md",
+              "sourceDirName": "Javascript/Basic New",
+              "slug": "/Javascript/Basic New/data-type",
+              "permalink": "/documents/web/Javascript/Basic New/data-type",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic New/data-type.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Variable",
+                "permalink": "/documents/web/Javascript/Basic New/Variable"
+              },
+              "next": {
+                "title": "OOP",
+                "permalink": "/documents/web/OOP/"
+              }
+            },
+            {
+              "id": "Javascript/Basic New/Variable",
+              "title": "Variable",
+              "description": "Khai báo Biến",
+              "source": "@site/docs/web/Javascript/Basic New/Variable.md",
+              "sourceDirName": "Javascript/Basic New",
+              "slug": "/Javascript/Basic New/Variable",
+              "permalink": "/documents/web/Javascript/Basic New/Variable",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic New/Variable.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Loop",
+                "permalink": "/documents/web/Javascript/Basic/loop"
+              },
+              "next": {
+                "title": "Data Types",
+                "permalink": "/documents/web/Javascript/Basic New/data-type"
+              }
+            },
+            {
+              "id": "Javascript/Basic/Array",
+              "title": "Array Method",
+              "description": "Kiểm tra Array",
+              "source": "@site/docs/web/Javascript/Basic/Array.md",
+              "sourceDirName": "Javascript/Basic",
+              "slug": "/Javascript/Basic/Array",
+              "permalink": "/documents/web/Javascript/Basic/Array",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic/Array.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Spread, Rest Operator and Destructuring",
+                "permalink": "/documents/web/Javascript/Basic/SpreadRest"
+              },
+              "next": {
+                "title": "String and Number Method",
+                "permalink": "/documents/web/Javascript/Basic/String"
+              }
+            },
+            {
+              "id": "Javascript/Basic/loop",
+              "title": "Loop",
+              "description": "",
+              "source": "@site/docs/web/Javascript/Basic/loop.md",
+              "sourceDirName": "Javascript/Basic",
+              "slug": "/Javascript/Basic/loop",
+              "permalink": "/documents/web/Javascript/Basic/loop",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic/loop.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "String and Number Method",
+                "permalink": "/documents/web/Javascript/Basic/String"
+              },
+              "next": {
+                "title": "Variable",
+                "permalink": "/documents/web/Javascript/Basic New/Variable"
+              }
+            },
+            {
+              "id": "Javascript/Basic/SpreadRest",
+              "title": "Spread, Rest Operator and Destructuring",
+              "description": "",
+              "source": "@site/docs/web/Javascript/Basic/SpreadRest.md",
+              "sourceDirName": "Javascript/Basic",
+              "slug": "/Javascript/Basic/SpreadRest",
+              "permalink": "/documents/web/Javascript/Basic/SpreadRest",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic/SpreadRest.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "This, bind(), call()",
+                "permalink": "/documents/web/Javascript/Advanced/this"
+              },
+              "next": {
+                "title": "Array Method",
+                "permalink": "/documents/web/Javascript/Basic/Array"
+              }
+            },
+            {
+              "id": "Javascript/Basic/String",
+              "title": "String and Number Method",
+              "description": "Find index",
+              "source": "@site/docs/web/Javascript/Basic/String.md",
+              "sourceDirName": "Javascript/Basic",
+              "slug": "/Javascript/Basic/String",
+              "permalink": "/documents/web/Javascript/Basic/String",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Javascript/Basic/String.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Array Method",
+                "permalink": "/documents/web/Javascript/Basic/Array"
+              },
+              "next": {
+                "title": "Loop",
+                "permalink": "/documents/web/Javascript/Basic/loop"
+              }
+            },
+            {
+              "id": "OOP/oop",
+              "title": "OOP",
+              "description": "4 tính chất",
+              "source": "@site/docs/web/OOP/oop.md",
+              "sourceDirName": "OOP",
+              "slug": "/OOP/",
+              "permalink": "/documents/web/OOP/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/OOP/oop.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Data Types",
+                "permalink": "/documents/web/Javascript/Basic New/data-type"
+              },
+              "next": {
+                "title": "Basic",
+                "permalink": "/documents/web/ReactJS/basic"
+              }
+            },
+            {
+              "id": "ReactJS/basic",
+              "title": "Basic",
+              "description": "React.createElement()",
+              "source": "@site/docs/web/ReactJS/basic.md",
+              "sourceDirName": "ReactJS",
+              "slug": "/ReactJS/basic",
+              "permalink": "/documents/web/ReactJS/basic",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/ReactJS/basic.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "OOP",
+                "permalink": "/documents/web/OOP/"
+              },
+              "next": {
+                "title": "Hook",
+                "permalink": "/documents/web/ReactJS/hook"
+              }
+            },
+            {
+              "id": "ReactJS/hook",
+              "title": "Hook",
+              "description": "useState",
+              "source": "@site/docs/web/ReactJS/hook.md",
+              "sourceDirName": "ReactJS",
+              "slug": "/ReactJS/hook",
+              "permalink": "/documents/web/ReactJS/hook",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/ReactJS/hook.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Basic",
+                "permalink": "/documents/web/ReactJS/basic"
+              },
+              "next": {
+                "title": "Plugin",
+                "permalink": "/documents/web/ReactJS/plugin"
+              }
+            },
+            {
+              "id": "ReactJS/plugin",
+              "title": "Plugin",
+              "description": "npm & npx & yarn",
+              "source": "@site/docs/web/ReactJS/plugin.md",
+              "sourceDirName": "ReactJS",
+              "slug": "/ReactJS/plugin",
+              "permalink": "/documents/web/ReactJS/plugin",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/ReactJS/plugin.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Hook",
+                "permalink": "/documents/web/ReactJS/hook"
+              },
+              "next": {
+                "title": "TypeBasic",
+                "permalink": "/documents/web/Typescript/Basic"
+              }
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "title": "Congratulations!",
+              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+              "source": "@site/docs/web/tutorial-basics/congratulations.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/congratulations",
+              "permalink": "/documents/web/tutorial-basics/congratulations",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/congratulations.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Deploy your site",
+                "permalink": "/documents/web/tutorial-basics/deploy-your-site"
+              },
+              "next": {
+                "title": "CSS",
+                "permalink": "/documents/web/CSS/"
+              }
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "title": "Create a Blog Post",
+              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+              "source": "@site/docs/web/tutorial-basics/create-a-blog-post.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-blog-post",
+              "permalink": "/documents/web/tutorial-basics/create-a-blog-post",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/create-a-blog-post.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Document",
+                "permalink": "/documents/web/tutorial-basics/create-a-document"
+              },
+              "next": {
+                "title": "Markdown Features",
+                "permalink": "/documents/web/tutorial-basics/markdown-features"
+              }
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "title": "Create a Document",
+              "description": "Documents are groups of pages connected through:",
+              "source": "@site/docs/web/tutorial-basics/create-a-document.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-document",
+              "permalink": "/documents/web/tutorial-basics/create-a-document",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/create-a-document.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Page",
+                "permalink": "/documents/web/tutorial-basics/create-a-page"
+              },
+              "next": {
+                "title": "Create a Blog Post",
+                "permalink": "/documents/web/tutorial-basics/create-a-blog-post"
+              }
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "title": "Create a Page",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/docs/web/tutorial-basics/create-a-page.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-page",
+              "permalink": "/documents/web/tutorial-basics/create-a-page",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/create-a-page.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorial - Basics",
+                "permalink": "/documents/web/category/tutorial---basics"
+              },
+              "next": {
+                "title": "Create a Document",
+                "permalink": "/documents/web/tutorial-basics/create-a-document"
+              }
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "title": "Deploy your site",
+              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+              "source": "@site/docs/web/tutorial-basics/deploy-your-site.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/deploy-your-site",
+              "permalink": "/documents/web/tutorial-basics/deploy-your-site",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/deploy-your-site.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Markdown Features",
+                "permalink": "/documents/web/tutorial-basics/markdown-features"
+              },
+              "next": {
+                "title": "Congratulations!",
+                "permalink": "/documents/web/tutorial-basics/congratulations"
+              }
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "title": "Markdown Features",
+              "description": "Docusaurus supports Markdown and a few additional features.",
+              "source": "@site/docs/web/tutorial-basics/markdown-features.mdx",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/markdown-features",
+              "permalink": "/documents/web/tutorial-basics/markdown-features",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/tutorial-basics/markdown-features.mdx",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Blog Post",
+                "permalink": "/documents/web/tutorial-basics/create-a-blog-post"
+              },
+              "next": {
+                "title": "Deploy your site",
+                "permalink": "/documents/web/tutorial-basics/deploy-your-site"
+              }
+            },
+            {
+              "id": "Typescript/Basic",
+              "title": "TypeBasic",
+              "description": "Primitive Data Type",
+              "source": "@site/docs/web/Typescript/Basic.md",
+              "sourceDirName": "Typescript",
+              "slug": "/Typescript/Basic",
+              "permalink": "/documents/web/Typescript/Basic",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Typescript/Basic.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Plugin",
+                "permalink": "/documents/web/ReactJS/plugin"
+              },
+              "next": {
+                "title": "So sánh Type Alias vs Interface",
+                "permalink": "/documents/web/Typescript/TypeAliasAndInterface"
+              }
+            },
+            {
+              "id": "Typescript/TypeAliasAndInterface",
+              "title": "So sánh Type Alias vs Interface",
+              "description": "- Type Alias: \"A type alias is exactly that - a name for any type\"",
+              "source": "@site/docs/web/Typescript/TypeAliasAndInterface.md",
+              "sourceDirName": "Typescript",
+              "slug": "/Typescript/TypeAliasAndInterface",
+              "permalink": "/documents/web/Typescript/TypeAliasAndInterface",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Typescript/TypeAliasAndInterface.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "TypeBasic",
+                "permalink": "/documents/web/Typescript/Basic"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Tutorial - Basics",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/create-a-page"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/create-a-document"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/create-a-blog-post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/markdown-features"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/deploy-your-site"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/congratulations"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "5 minutes to learn the most important Docusaurus concepts.",
+                  "slug": "/category/tutorial---basics",
+                  "permalink": "/documents/web/category/tutorial---basics"
+                }
+              },
+              {
+                "type": "category",
+                "label": "CSS",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "CSS/main-concept"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "CSS/property-important"
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "CSS/css"
+                }
+              },
+              {
+                "type": "doc",
+                "label": "Git",
+                "id": "Git/Git"
+              },
+              {
+                "type": "category",
+                "label": "HTML",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "HTML/main-concept"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HTML/tag-important"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Javascript",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Advanced",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Advanced/closure"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Advanced/eventloop"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Advanced/scope"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Advanced/thamchieuthamtri"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Advanced/this"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "Basic",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic/SpreadRest"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic/Array"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic/String"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic/loop"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "Basic New",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic New/Variable"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Javascript/Basic New/data-type"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "label": "OOP",
+                "id": "OOP/oop"
+              },
+              {
+                "type": "category",
+                "label": "ReactJS",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ReactJS/basic"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ReactJS/hook"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ReactJS/plugin"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Typescript",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Typescript/Basic"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Typescript/TypeAliasAndInterface"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "network": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/documents/network",
+          "tagsPath": "/documents/network/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs-network/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "D:\\Git\\documents\\sidebars2.js",
+          "contentPath": "D:\\Git\\documents\\docs\\network",
+          "contentPathLocalized": "D:\\Git\\documents\\i18n\\en\\docusaurus-plugin-content-docs-network\\current",
+          "docs": [
+            {
+              "id": "http-protocol",
+              "title": "HTTP Protocols",
+              "description": "Introduction",
+              "source": "@site/docs/network/http-protocol.md",
+              "sourceDirName": ".",
+              "slug": "/http-protocol",
+              "permalink": "/documents/network/http-protocol",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/http-protocol.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorial Intro",
+                "permalink": "/documents/network/intro"
+              },
+              "next": {
+                "title": "HTTPS Protocol",
+                "permalink": "/documents/network/https-protocol"
+              }
+            },
+            {
+              "id": "https-protocol",
+              "title": "HTTPS Protocol",
+              "description": "Introduction",
+              "source": "@site/docs/network/https-protocol.md",
+              "sourceDirName": ".",
+              "slug": "/https-protocol",
+              "permalink": "/documents/network/https-protocol",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/https-protocol.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "HTTP Protocols",
+                "permalink": "/documents/network/http-protocol"
+              },
+              "next": {
+                "title": "Network Protocols",
+                "permalink": "/documents/network/network-protocol"
+              }
+            },
+            {
+              "id": "intro",
+              "title": "Tutorial Intro",
+              "description": "Let's discover Docusaurus in less than 5 minutes.",
+              "source": "@site/docs/network/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/documents/network/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "HTTP Protocols",
+                "permalink": "/documents/network/http-protocol"
+              }
+            },
+            {
+              "id": "network",
+              "title": "Main Concept",
+              "description": "Network",
+              "source": "@site/docs/network/network.md",
+              "sourceDirName": ".",
+              "slug": "/network",
+              "permalink": "/documents/network/network",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/network.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Network Protocols",
+                "permalink": "/documents/network/network-protocol"
+              },
+              "next": {
+                "title": "TCP/IP Protocols",
+                "permalink": "/documents/network/tcp-ip-protocol"
+              }
+            },
+            {
+              "id": "network-protocol",
+              "title": "Network Protocols",
+              "description": "Intro",
+              "source": "@site/docs/network/network-protocol.md",
+              "sourceDirName": ".",
+              "slug": "/network-protocol",
+              "permalink": "/documents/network/network-protocol",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/network-protocol.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "HTTPS Protocol",
+                "permalink": "/documents/network/https-protocol"
+              },
+              "next": {
+                "title": "Main Concept",
+                "permalink": "/documents/network/network"
+              }
+            },
+            {
+              "id": "tcp-ip-protocol",
+              "title": "TCP/IP Protocols",
+              "description": "Intro",
+              "source": "@site/docs/network/tcp-ip-protocol.md",
+              "sourceDirName": ".",
+              "slug": "/tcp-ip-protocol",
+              "permalink": "/documents/network/tcp-ip-protocol",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/network/tcp-ip-protocol.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Main Concept",
+                "permalink": "/documents/network/network"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "doc",
+                "id": "http-protocol"
+              },
+              {
+                "type": "doc",
+                "id": "https-protocol"
+              },
+              {
+                "type": "doc",
+                "id": "network-protocol"
+              },
+              {
+                "type": "doc",
+                "id": "network"
+              },
+              {
+                "type": "doc",
+                "id": "tcp-ip-protocol"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

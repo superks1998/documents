@@ -1,0 +1,24 @@
+{
+  "id": "ReactJS/plugin",
+  "title": "Plugin",
+  "description": "npm & npx & yarn",
+  "source": "@site/docs/ReactJS/plugin.md",
+  "sourceDirName": "ReactJS",
+  "slug": "/ReactJS/plugin",
+  "permalink": "/documents/docs/ReactJS/plugin",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ReactJS/plugin.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hook",
+    "permalink": "/documents/docs/ReactJS/hook"
+  },
+  "next": {
+    "title": "TypeBasic",
+    "permalink": "/documents/docs/Typescript/Basic"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Typescript/Basic",
+  "title": "TypeBasic",
+  "description": "Primitive Data Type",
+  "source": "@site/docs/Typescript/Basic.md",
+  "sourceDirName": "Typescript",
+  "slug": "/Typescript/Basic",
+  "permalink": "/documents/docs/Typescript/Basic",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Typescript/Basic.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Plugin",
+    "permalink": "/documents/docs/ReactJS/plugin"
+  },
+  "next": {
+    "title": "So sánh Type Alias vs Interface",
+    "permalink": "/documents/docs/Typescript/TypeAliasAndInterface"
+  }
+}

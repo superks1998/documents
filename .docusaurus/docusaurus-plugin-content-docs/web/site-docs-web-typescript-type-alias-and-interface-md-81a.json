@@ -1,0 +1,20 @@
+{
+  "id": "Typescript/TypeAliasAndInterface",
+  "title": "So sánh Type Alias vs Interface",
+  "description": "- Type Alias: \"A type alias is exactly that - a name for any type\"",
+  "source": "@site/docs/web/Typescript/TypeAliasAndInterface.md",
+  "sourceDirName": "Typescript",
+  "slug": "/Typescript/TypeAliasAndInterface",
+  "permalink": "/documents/web/Typescript/TypeAliasAndInterface",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/web/Typescript/TypeAliasAndInterface.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "TypeBasic",
+    "permalink": "/documents/web/Typescript/Basic"
+  }
+}

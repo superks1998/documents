@@ -1,0 +1,24 @@
+{
+  "id": "Javascript/Basic/String",
+  "title": "String and Number Method",
+  "description": "Find index",
+  "source": "@site/docs/Javascript/Basic/String.md",
+  "sourceDirName": "Javascript/Basic",
+  "slug": "/Javascript/Basic/String",
+  "permalink": "/documents/docs/Javascript/Basic/String",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Javascript/Basic/String.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Array Method",
+    "permalink": "/documents/docs/Javascript/Basic/Array"
+  },
+  "next": {
+    "title": "Loop",
+    "permalink": "/documents/docs/Javascript/Basic/loop"
+  }
+}

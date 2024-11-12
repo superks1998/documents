@@ -1,0 +1,24 @@
+{
+  "id": "Git/Git",
+  "title": "Git",
+  "description": "Các khái niệm",
+  "source": "@site/docs/Git/Git.md",
+  "sourceDirName": "Git",
+  "slug": "/Git/",
+  "permalink": "/documents/docs/Git/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Git/Git.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Property Important",
+    "permalink": "/documents/docs/CSS/property-important"
+  },
+  "next": {
+    "title": "Main Concept",
+    "permalink": "/documents/docs/HTML/main-concept"
+  }
+}
