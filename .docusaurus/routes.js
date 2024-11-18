@@ -3,145 +3,115 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/documents/__docusaurus/debug',
-    component: ComponentCreator('/documents/__docusaurus/debug', '3a8'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/config',
-    component: ComponentCreator('/documents/__docusaurus/debug/config', 'bce'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/content',
-    component: ComponentCreator('/documents/__docusaurus/debug/content', '360'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/globalData',
-    component: ComponentCreator('/documents/__docusaurus/debug/globalData', 'ea7'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/metadata',
-    component: ComponentCreator('/documents/__docusaurus/debug/metadata', '792'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/registry',
-    component: ComponentCreator('/documents/__docusaurus/debug/registry', '956'),
-    exact: true
-  },
-  {
-    path: '/documents/__docusaurus/debug/routes',
-    component: ComponentCreator('/documents/__docusaurus/debug/routes', 'cdb'),
-    exact: true
-  },
-  {
     path: '/documents/blog',
-    component: ComponentCreator('/documents/blog', '6ce'),
+    component: ComponentCreator('/documents/blog', '8b0'),
     exact: true
   },
   {
     path: '/documents/blog/archive',
-    component: ComponentCreator('/documents/blog/archive', 'c91'),
+    component: ComponentCreator('/documents/blog/archive', '045'),
+    exact: true
+  },
+  {
+    path: '/documents/blog/authors',
+    component: ComponentCreator('/documents/blog/authors', 'e59'),
     exact: true
   },
   {
     path: '/documents/blog/first-blog-post',
-    component: ComponentCreator('/documents/blog/first-blog-post', '139'),
+    component: ComponentCreator('/documents/blog/first-blog-post', 'df9'),
     exact: true
   },
   {
     path: '/documents/blog/long-blog-post',
-    component: ComponentCreator('/documents/blog/long-blog-post', '01a'),
+    component: ComponentCreator('/documents/blog/long-blog-post', '6ce'),
     exact: true
   },
   {
     path: '/documents/blog/mdx-blog-post',
-    component: ComponentCreator('/documents/blog/mdx-blog-post', 'd81'),
+    component: ComponentCreator('/documents/blog/mdx-blog-post', 'b8f'),
     exact: true
   },
   {
     path: '/documents/blog/tags',
-    component: ComponentCreator('/documents/blog/tags', '177'),
+    component: ComponentCreator('/documents/blog/tags', '3d0'),
     exact: true
   },
   {
     path: '/documents/blog/tags/docusaurus',
-    component: ComponentCreator('/documents/blog/tags/docusaurus', '022'),
+    component: ComponentCreator('/documents/blog/tags/docusaurus', '16e'),
     exact: true
   },
   {
     path: '/documents/blog/tags/facebook',
-    component: ComponentCreator('/documents/blog/tags/facebook', '54f'),
+    component: ComponentCreator('/documents/blog/tags/facebook', 'c29'),
     exact: true
   },
   {
     path: '/documents/blog/tags/hello',
-    component: ComponentCreator('/documents/blog/tags/hello', 'a67'),
+    component: ComponentCreator('/documents/blog/tags/hello', '1fb'),
     exact: true
   },
   {
     path: '/documents/blog/tags/hola',
-    component: ComponentCreator('/documents/blog/tags/hola', 'e6d'),
+    component: ComponentCreator('/documents/blog/tags/hola', '32e'),
     exact: true
   },
   {
     path: '/documents/blog/welcome',
-    component: ComponentCreator('/documents/blog/welcome', '645'),
+    component: ComponentCreator('/documents/blog/welcome', 'cf7'),
     exact: true
   },
   {
     path: '/documents/markdown-page',
-    component: ComponentCreator('/documents/markdown-page', '498'),
+    component: ComponentCreator('/documents/markdown-page', '3b7'),
     exact: true
   },
   {
     path: '/documents/network',
-    component: ComponentCreator('/documents/network', '519'),
+    component: ComponentCreator('/documents/network', '778'),
     routes: [
       {
         path: '/documents/network',
-        component: ComponentCreator('/documents/network', '952'),
+        component: ComponentCreator('/documents/network', '72c'),
         routes: [
           {
             path: '/documents/network',
-            component: ComponentCreator('/documents/network', '5d1'),
+            component: ComponentCreator('/documents/network', '46c'),
             routes: [
               {
                 path: '/documents/network/http-protocol',
-                component: ComponentCreator('/documents/network/http-protocol', '31f'),
+                component: ComponentCreator('/documents/network/http-protocol', '474'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/network/https-protocol',
-                component: ComponentCreator('/documents/network/https-protocol', '95b'),
+                component: ComponentCreator('/documents/network/https-protocol', '1dd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/network/intro',
-                component: ComponentCreator('/documents/network/intro', '9dc'),
+                component: ComponentCreator('/documents/network/intro', 'd93'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/network/network',
-                component: ComponentCreator('/documents/network/network', 'e36'),
+                component: ComponentCreator('/documents/network/network', '53c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/network/network-protocol',
-                component: ComponentCreator('/documents/network/network-protocol', 'af2'),
+                component: ComponentCreator('/documents/network/network-protocol', 'b0c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/network/tcp-ip-protocol',
-                component: ComponentCreator('/documents/network/tcp-ip-protocol', 'c3b'),
+                component: ComponentCreator('/documents/network/tcp-ip-protocol', 'd73'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -153,199 +123,199 @@ export default [
   },
   {
     path: '/documents/web',
-    component: ComponentCreator('/documents/web', '7fe'),
+    component: ComponentCreator('/documents/web', 'd23'),
     routes: [
       {
         path: '/documents/web',
-        component: ComponentCreator('/documents/web', 'f52'),
+        component: ComponentCreator('/documents/web', 'aff'),
         routes: [
           {
             path: '/documents/web',
-            component: ComponentCreator('/documents/web', 'c79'),
+            component: ComponentCreator('/documents/web', 'dfb'),
             routes: [
               {
                 path: '/documents/web/category/tutorial---basics',
-                component: ComponentCreator('/documents/web/category/tutorial---basics', '997'),
+                component: ComponentCreator('/documents/web/category/tutorial---basics', '2b3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/CSS/',
-                component: ComponentCreator('/documents/web/CSS/', 'f8a'),
+                component: ComponentCreator('/documents/web/CSS/', '6c2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/CSS/main-concept',
-                component: ComponentCreator('/documents/web/CSS/main-concept', 'af0'),
+                component: ComponentCreator('/documents/web/CSS/main-concept', '3b8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/CSS/property-important',
-                component: ComponentCreator('/documents/web/CSS/property-important', 'd28'),
+                component: ComponentCreator('/documents/web/CSS/property-important', '678'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Git/',
-                component: ComponentCreator('/documents/web/Git/', '085'),
+                component: ComponentCreator('/documents/web/Git/', '841'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/HTML/main-concept',
-                component: ComponentCreator('/documents/web/HTML/main-concept', '304'),
+                component: ComponentCreator('/documents/web/HTML/main-concept', '0c6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/HTML/tag-important',
-                component: ComponentCreator('/documents/web/HTML/tag-important', '282'),
+                component: ComponentCreator('/documents/web/HTML/tag-important', 'c92'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/intro',
-                component: ComponentCreator('/documents/web/intro', '3af'),
+                component: ComponentCreator('/documents/web/intro', 'f74'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Advanced/closure',
-                component: ComponentCreator('/documents/web/Javascript/Advanced/closure', 'e61'),
+                component: ComponentCreator('/documents/web/Javascript/Advanced/closure', 'f38'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Advanced/eventloop',
-                component: ComponentCreator('/documents/web/Javascript/Advanced/eventloop', '4b2'),
+                component: ComponentCreator('/documents/web/Javascript/Advanced/eventloop', '759'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Advanced/scope',
-                component: ComponentCreator('/documents/web/Javascript/Advanced/scope', '7f4'),
+                component: ComponentCreator('/documents/web/Javascript/Advanced/scope', 'f25'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Advanced/thamchieuthamtri',
-                component: ComponentCreator('/documents/web/Javascript/Advanced/thamchieuthamtri', 'e89'),
+                component: ComponentCreator('/documents/web/Javascript/Advanced/thamchieuthamtri', '993'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Advanced/this',
-                component: ComponentCreator('/documents/web/Javascript/Advanced/this', 'd42'),
+                component: ComponentCreator('/documents/web/Javascript/Advanced/this', 'c0f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic New/data-type',
-                component: ComponentCreator('/documents/web/Javascript/Basic New/data-type', 'b05'),
+                component: ComponentCreator('/documents/web/Javascript/Basic New/data-type', 'c84'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic New/Variable',
-                component: ComponentCreator('/documents/web/Javascript/Basic New/Variable', '48f'),
+                component: ComponentCreator('/documents/web/Javascript/Basic New/Variable', 'f0d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic/Array',
-                component: ComponentCreator('/documents/web/Javascript/Basic/Array', 'fee'),
+                component: ComponentCreator('/documents/web/Javascript/Basic/Array', '196'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic/loop',
-                component: ComponentCreator('/documents/web/Javascript/Basic/loop', '46c'),
+                component: ComponentCreator('/documents/web/Javascript/Basic/loop', 'c3c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic/SpreadRest',
-                component: ComponentCreator('/documents/web/Javascript/Basic/SpreadRest', '9e0'),
+                component: ComponentCreator('/documents/web/Javascript/Basic/SpreadRest', '727'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Javascript/Basic/String',
-                component: ComponentCreator('/documents/web/Javascript/Basic/String', '01d'),
+                component: ComponentCreator('/documents/web/Javascript/Basic/String', 'a21'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/OOP/',
-                component: ComponentCreator('/documents/web/OOP/', 'a40'),
+                component: ComponentCreator('/documents/web/OOP/', '9c4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/ReactJS/basic',
-                component: ComponentCreator('/documents/web/ReactJS/basic', '9c2'),
+                component: ComponentCreator('/documents/web/ReactJS/basic', '155'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/ReactJS/hook',
-                component: ComponentCreator('/documents/web/ReactJS/hook', '3ad'),
+                component: ComponentCreator('/documents/web/ReactJS/hook', 'ec7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/ReactJS/plugin',
-                component: ComponentCreator('/documents/web/ReactJS/plugin', '370'),
+                component: ComponentCreator('/documents/web/ReactJS/plugin', 'd5a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/congratulations',
-                component: ComponentCreator('/documents/web/tutorial-basics/congratulations', 'a98'),
+                component: ComponentCreator('/documents/web/tutorial-basics/congratulations', '2b2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/documents/web/tutorial-basics/create-a-blog-post', 'a4f'),
+                component: ComponentCreator('/documents/web/tutorial-basics/create-a-blog-post', 'aa2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/create-a-document',
-                component: ComponentCreator('/documents/web/tutorial-basics/create-a-document', '039'),
+                component: ComponentCreator('/documents/web/tutorial-basics/create-a-document', '7e9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/create-a-page',
-                component: ComponentCreator('/documents/web/tutorial-basics/create-a-page', 'adf'),
+                component: ComponentCreator('/documents/web/tutorial-basics/create-a-page', '355'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/documents/web/tutorial-basics/deploy-your-site', '4ac'),
+                component: ComponentCreator('/documents/web/tutorial-basics/deploy-your-site', '7b0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/tutorial-basics/markdown-features',
-                component: ComponentCreator('/documents/web/tutorial-basics/markdown-features', '708'),
+                component: ComponentCreator('/documents/web/tutorial-basics/markdown-features', '367'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Typescript/Basic',
-                component: ComponentCreator('/documents/web/Typescript/Basic', '899'),
+                component: ComponentCreator('/documents/web/Typescript/Basic', '451'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/documents/web/Typescript/TypeAliasAndInterface',
-                component: ComponentCreator('/documents/web/Typescript/TypeAliasAndInterface', '13f'),
+                component: ComponentCreator('/documents/web/Typescript/TypeAliasAndInterface', '4b0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -357,7 +327,7 @@ export default [
   },
   {
     path: '/documents/',
-    component: ComponentCreator('/documents/', '26a'),
+    component: ComponentCreator('/documents/', '862'),
     exact: true
   },
   {

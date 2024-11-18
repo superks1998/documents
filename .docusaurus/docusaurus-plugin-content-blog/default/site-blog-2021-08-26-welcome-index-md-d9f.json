@@ -4,17 +4,19 @@
   "title": "Welcome",
   "description": "Docusaurus blogging features are powered by the blog plugin.",
   "date": "2021-08-26T00:00:00.000Z",
-  "formattedDate": "August 26, 2021",
   "tags": [
     {
+      "inline": true,
       "label": "facebook",
       "permalink": "/documents/blog/tags/facebook"
     },
     {
+      "inline": true,
       "label": "hello",
       "permalink": "/documents/blog/tags/hello"
     },
     {
+      "inline": true,
       "label": "docusaurus",
       "permalink": "/documents/blog/tags/docusaurus"
     }
@@ -27,14 +29,16 @@
       "title": "Docusaurus maintainer",
       "url": "https://sebastienlorber.com",
       "imageURL": "https://github.com/slorber.png",
-      "key": "slorber"
+      "key": "slorber",
+      "page": null
     },
     {
       "name": "Yangshun Tay",
       "title": "Front End Engineer @ Facebook",
       "url": "https://github.com/yangshun",
       "imageURL": "https://github.com/yangshun.png",
-      "key": "yangshun"
+      "key": "yangshun",
+      "page": null
     }
   ],
   "frontMatter": {

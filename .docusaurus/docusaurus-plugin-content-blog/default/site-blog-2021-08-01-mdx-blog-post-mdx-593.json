@@ -4,9 +4,9 @@
   "title": "MDX Blog Post",
   "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
   "date": "2021-08-01T00:00:00.000Z",
-  "formattedDate": "August 1, 2021",
   "tags": [
     {
+      "inline": true,
       "label": "docusaurus",
       "permalink": "/documents/blog/tags/docusaurus"
     }
@@ -19,7 +19,8 @@
       "title": "Docusaurus maintainer",
       "url": "https://sebastienlorber.com",
       "imageURL": "https://github.com/slorber.png",
-      "key": "slorber"
+      "key": "slorber",
+      "page": null
     }
   ],
   "frontMatter": {

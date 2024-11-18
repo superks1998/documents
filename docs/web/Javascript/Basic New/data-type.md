@@ -138,10 +138,51 @@ arr2.push(4);
 console.log(arr1); // [1, 2, 3, 4], do arr1 và arr2 cùng tham chiếu đến một mảng
 ```
 
-### ***3. Kiểm Tra Kiểu Dữ Liệu***
+### ***3. Truthy và Falsy trong JavaScript***
+
+Trong JavaScript, **Truthy** và **Falsy** là các khái niệm quan trọng khi làm việc với điều kiện trong các biểu thức logic. Dưới đây là cách JavaScript đánh giá các giá trị này.
+
+#### ***3.1 Falsy Values***
+Các giá trị Falsy được đánh giá là `false` khi sử dụng trong biểu thức điều kiện. Những giá trị này bao gồm:
+- `false`
+- `0`
+- `""` (chuỗi rỗng)
+- `null`
+- `undefined`
+- `NaN`
+
+**Ví dụ về Falsy Values:**
+```javascript
+if (0) {
+  console.log("Falsy"); // Không chạy vì 0 là Falsy
+}
+
+if ("") {
+  console.log("Falsy"); // Không chạy vì chuỗi rỗng là Falsy
+}
+```
+
+#### ***4.2 Truthy Values***
+Các giá trị không nằm trong danh sách `Falsy` đều được coi là `Truthy` và sẽ được đánh giá là true trong biểu thức điều kiện. Một số ví dụ phổ biến của `Truthy Values`:
+- **Chuỗi không rỗng**: `"hello"`, `"false"`
+- **Số khác 0**: `1`, `-1`, `3.14`
+- **Đối tượng hoặc mảng không rỗng**: `{}`, `[]`
+
+**Ví dụ về Truthy Values:**
+```javascript
+if (0) {
+  console.log("Falsy"); // Không chạy vì 0 là Falsy
+}
+
+if ("") {
+  console.log("Falsy"); // Không chạy vì chuỗi rỗng là Falsy
+}
+```
+
+### ***4. Kiểm Tra Kiểu Dữ Liệu***
 Để kiểm tra kiểu dữ liệu của một biến trong JavaScript, bạn có thể sử dụng toán tử `typeof` hoặc `instanceof` cho các đối tượng.
 
-#### ***3.1. `typeof`***
+#### ***4.1. `typeof`***
   - **Giới thiệu**: `typeof` trả về một chuỗi mô tả kiểu dữ liệu của biến.
   - **Ví dụ**:
     ```javascript
@@ -153,7 +194,7 @@ console.log(arr1); // [1, 2, 3, 4], do arr1 và arr2 cùng tham chiếu đến m
     console.log(typeof null); // "object" (đây là một đặc điểm không mong muốn trong JavaScript)
     ```
 
-#### ***3.2. `instanceof`***
+#### ***4.2. `instanceof`***
   - **Giới thiệu**: `instanceof` dùng để kiểm tra một đối tượng có phải là thể hiện (instance) của một lớp hay không.
   - **Ví dụ**:
     ```javascript

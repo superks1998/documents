@@ -84,15 +84,6 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
           "title": "Community",
           "items": [
             {
@@ -341,6 +332,11 @@ export default {
         "autoCollapseCategories": false
       }
     },
+    "blog": {
+      "sidebar": {
+        "groupByYear": true
+      }
+    },
     "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
@@ -355,6 +351,21 @@ export default {
       "en"
     ],
     "localeConfigs": {}
+  },
+  "future": {
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false
+    },
+    "experimental_storage": {
+      "type": "localStorage",
+      "namespace": false
+    },
+    "experimental_router": "browser"
   },
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
@@ -375,6 +386,9 @@ export default {
       "comments": true,
       "admonitions": true,
       "headingIds": true
+    },
+    "anchors": {
+      "maintainCase": false
     }
   }
 };
