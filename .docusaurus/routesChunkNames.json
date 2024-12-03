@@ -199,17 +199,17 @@
     "__comp": "17896441",
     "content": "67c33bfd"
   },
-  "/documents/web-d23": {
+  "/documents/web-eac": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "1b80550a"
     }
   },
-  "/documents/web-aff": {
+  "/documents/web-950": {
     "__comp": "a7bd4aaa",
     "__props": "1fb363f7"
   },
-  "/documents/web-dfb": {
+  "/documents/web-6a6": {
     "__comp": "a94703ab"
   },
   "/documents/web/category/tutorial---basics-2b3": {
@@ -264,9 +264,57 @@
     "__comp": "17896441",
     "content": "8e315783"
   },
+  "/documents/web/Javascript/Basic New/Array/-2d3": {
+    "__comp": "17896441",
+    "content": "54cf98b3"
+  },
+  "/documents/web/Javascript/Basic New/Array/array-method-0e0": {
+    "__comp": "17896441",
+    "content": "5413105e"
+  },
+  "/documents/web/Javascript/Basic New/Built-in Functions/-8f5": {
+    "__comp": "17896441",
+    "content": "64d3daac"
+  },
+  "/documents/web/Javascript/Basic New/conditional-567": {
+    "__comp": "17896441",
+    "content": "864d816f"
+  },
+  "/documents/web/Javascript/Basic New/D.O.M/-411": {
+    "__comp": "17896441",
+    "content": "b49fb598"
+  },
   "/documents/web/Javascript/Basic New/data-type-c84": {
     "__comp": "17896441",
     "content": "f2436b6a"
+  },
+  "/documents/web/Javascript/Basic New/function-e22": {
+    "__comp": "17896441",
+    "content": "3b710642"
+  },
+  "/documents/web/Javascript/Basic New/json-215": {
+    "__comp": "17896441",
+    "content": "46edf7dc"
+  },
+  "/documents/web/Javascript/Basic New/loop-274": {
+    "__comp": "17896441",
+    "content": "e83899fa"
+  },
+  "/documents/web/Javascript/Basic New/number-2dd": {
+    "__comp": "17896441",
+    "content": "8445d7e5"
+  },
+  "/documents/web/Javascript/Basic New/object-491": {
+    "__comp": "17896441",
+    "content": "930c88e1"
+  },
+  "/documents/web/Javascript/Basic New/operator-505": {
+    "__comp": "17896441",
+    "content": "3b3c332a"
+  },
+  "/documents/web/Javascript/Basic New/string-952": {
+    "__comp": "17896441",
+    "content": "715cbb45"
   },
   "/documents/web/Javascript/Basic New/Variable-f0d": {
     "__comp": "17896441",

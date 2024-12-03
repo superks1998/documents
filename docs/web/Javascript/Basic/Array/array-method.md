@@ -8,7 +8,9 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 1. **`push()`**
+## Adding/removing elements
+
+#### 1. **`push()`**
 
 - **Mô tả**: Thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
 - **Cú pháp**: `array.push(element1, element2, ..., elementN)`
@@ -25,7 +27,7 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 2. **`pop()`**
+#### 2. **`pop()`**
 
 - **Mô tả**: Xóa phần tử cuối cùng của mảng và trả về phần tử đã xóa.
 - **Cú pháp**: `array.pop()`
@@ -42,7 +44,7 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 3. **`shift()`**
+#### 3. **`shift()`**
 
 - **Mô tả**: Xóa phần tử đầu tiên của mảng và trả về phần tử đã xóa.
 - **Cú pháp**: `array.shift()`
@@ -59,7 +61,7 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 4. **`unshift()`**
+#### 4. **`unshift()`**
 
 - **Mô tả**: Thêm một hoặc nhiều phần tử vào đầu mảng, trả về độ dài mới của mảng.
 - **Cú pháp**: `array.unshift(element1, element2, ..., elementN)`
@@ -76,7 +78,7 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 5. **`splice()`**
+#### 5. **`splice()`**
 
 - **Mô tả**: Thêm, xóa, hoặc thay thế các phần tử trong mảng.
 - **Cú pháp**:
@@ -99,7 +101,7 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 6. **`slice()`**
+#### 6. **`slice()`**
 
 - **Mô tả**: Tạo một mảng mới chứa một phần các phần tử của mảng gốc, bắt đầu từ `start` và kết thúc trước `end`.
 - **Cú pháp**: `array.slice(start, end)`
@@ -117,7 +119,9 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 7. **`concat()`**
+## Manipulating Arrays
+
+#### 7. **`concat()`**
 
 - **Mô tả**: Gộp hai hoặc nhiều mảng, trả về mảng mới.
 - **Cú pháp**: `array.concat(array2, array3, ..., arrayN)`
@@ -134,7 +138,9 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-### 8. **`indexOf()`**
+## Finding elements
+
+#### 8. **`indexOf()`**
 
 - **Mô tả**: Trả về vị trí của phần tử đầu tiên tìm thấy trong mảng, hoặc `-1` nếu không tìm thấy.
 - **Cú pháp**: `array.indexOf(searchElement, fromIndex)`
@@ -170,12 +176,6 @@ Dưới đây là mô tả chi tiết về các phương thức của mảng tro
 
 ---
 
-# Các phương thức tiếp theo của Array trong JavaScript
-
-Dưới đây là các phương thức bổ sung cho `Array` trong JavaScript, cùng với chi tiết về tham số đầu vào, kết quả trả về, và ví dụ minh họa.
-
----
-
 ### 10. **`find()`**
 
 - **Mô tả**: Trả về phần tử đầu tiên trong mảng thỏa mãn điều kiện của hàm kiểm tra.
@@ -193,6 +193,54 @@ Dưới đây là các phương thức bổ sung cho `Array` trong JavaScript, c
     let numbers = [5, 12, 8, 130, 44];
     let found = numbers.find(element => element > 10);
     console.log(found); // Kết quả: 12
+    ```
+
+---
+
+## **`findIndex()`**
+
+- **Mô tả**: Tìm chỉ mục (index) của phần tử đầu tiên thỏa mãn điều kiện của hàm kiểm tra.
+
+- **Cú pháp**: `array.findIndex(callback(element, index, array), thisArg)`
+
+- **Tham số**:
+    - `callback` - Hàm kiểm tra với mỗi phần tử, nhận ba tham số:
+        - `element` - Phần tử hiện tại trong mảng.
+        - `index` - Vị trí của phần tử hiện tại.
+        - `array` - Mảng đang được duyệt.
+    - `thisArg` (tùy chọn) - Giá trị sử dụng làm this khi thực thi callback.
+- **Trả về**: Chỉ mục của phần tử đầu tiên thỏa mãn điều kiện, hoặc -1 nếu không tìm thấy.
+- **Ví dụ**:
+
+    ```javascript
+    const array = [5, 12, 8, 130, 44];
+    const index = array.findIndex(element => element > 10);
+    console.log(index); // Kết quả: 1
+    ```
+---
+
+## High-order methods
+
+## **`forEach()`**
+- **Mô tả**:  Thực thi một hàm cho mỗi phần tử của mảng.
+
+- **Cú pháp**:  `array.forEach(callback(element, index, array), thisArg)`
+
+- **Tham số**:
+    - `callback` - Hàm thực thi với mỗi phần tử, nhận ba tham số:
+        - `element` - Phần tử hiện tại trong mảng.
+        - `index` - Vị trí của phần tử hiện tại.
+        - `array` - Mảng đang được duyệt.
+    - `thisArg` (tùy chọn) - Giá trị sử dụng làm this khi thực thi callback.
+
+- **Trả về**: `undefined`
+
+- **Ví dụ**:
+
+    ```javascript
+    const array = ['a', 'b', 'c'];
+    array.forEach(element => console.log(element));
+    // Kết quả: 'a', 'b', 'c'
     ```
 
 ---
@@ -343,7 +391,9 @@ Dưới đây là các phương thức bổ sung cho `Array` trong JavaScript, c
 
 ---
 
-### 18. **`join()`**
+## Arrays to Strings
+
+#### 18. **`join()`**
 
 - **Mô tả**: Nối tất cả các phần tử trong mảng thành một chuỗi, ngăn cách bằng một chuỗi được chỉ định.
 - **Cú pháp**: `array.join(separator)`

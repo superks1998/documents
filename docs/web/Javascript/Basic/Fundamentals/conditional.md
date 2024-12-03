@@ -115,26 +115,67 @@ sidebar_position: 4
     // Output: "Thứ Tư"
     ```
 
-#### Lưu ý
-- `break` trong `switch`: Dùng để dừng lại sau khi một `case` được thực thi, tránh thực thi các `case` tiếp theo.
-- Nếu có 2 hoặc nhiều `case` có cùng 1 câu lệnh cần thực thi. thì các `case` phía trước không cần điền câu lệnh, chỉ cần `case` cuối cùng.
+#### Fallthrough
+- `Fallthrough` là một hành vi trong cấu trúc `switch` của JavaScript, khi không sử dụng câu lệnh `break` hoặc `return` để ngắt case. 
+- Điều này dẫn đến việc thực thi tiếp các case tiếp theo dù điều kiện của chúng không khớp.
 
-    #### Ví dụ
+    #### Ví dụ lỗi Fallthrough
     ```javascript
-    let day;
+    const day = 2;
+
     switch (day) {
         case 1:
+            console.log("Monday");
         case 2:
-            console.log("Thứ Ba");
-            break;
+            console.log("Tuesday"); // Trường hợp khớp
         case 3:
-            console.log("Thứ Tư");
-            break;
+            console.log("Wednesday"); // Fallthrough
         default:
-            console.log("Không xác định");
+            console.log("Other day"); // Fallthrough
     }
-    // day = 1 và day = 2 đều có output là "Thứ Ba"
+
+    // Output: Tuesday
+            // Wednesday
+            // Other day
     ```
+
+    #### Sử dụng Fallthrough một cách có kiểm soát
+    - Hành vi fallthrough thường được coi là lỗi lập trình nếu không được sử dụng đúng cách. 
+    - Tuy nhiên, trong một số trường hợp, bạn có thể tận dụng kỹ thuật này.
+
+    ```javascript
+
+    function getSeason(month) {
+        switch (month) {
+            case 12:
+            case 1:
+            case 2:
+            return "Winter";
+            case 3:
+            case 4:
+            case 5:
+            return "Spring";
+            case 6:
+            case 7:
+            case 8:
+            return "Summer";
+            case 9:
+            case 10:
+            case 11:
+            return "Autumn";
+            default:
+            return "Invalid month";
+        }
+    }
+
+    console.log(getSeason(3)); // Output: Spring
+        
+    ```
+
+    - **Phân tích**:
+        - Các case chia sẻ logic chung có thể được nhóm lại mà không cần break.
+        - Điều này giúp giảm sự lặp lại của code.
+
 
 ### 5. Câu lệnh `?:` (Toán tử điều kiện hay Ternary Operator)
 - **Mục đích**: Là một dạng câu lệnh điều kiện ngắn gọn, thường dùng để gán giá trị dựa trên điều kiện.

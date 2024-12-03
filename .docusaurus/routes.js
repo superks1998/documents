@@ -123,15 +123,15 @@ export default [
   },
   {
     path: '/documents/web',
-    component: ComponentCreator('/documents/web', 'd23'),
+    component: ComponentCreator('/documents/web', 'eac'),
     routes: [
       {
         path: '/documents/web',
-        component: ComponentCreator('/documents/web', 'aff'),
+        component: ComponentCreator('/documents/web', '950'),
         routes: [
           {
             path: '/documents/web',
-            component: ComponentCreator('/documents/web', 'dfb'),
+            component: ComponentCreator('/documents/web', '6a6'),
             routes: [
               {
                 path: '/documents/web/category/tutorial---basics',
@@ -212,8 +212,80 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/documents/web/Javascript/Basic New/Array/',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/Array/', '2d3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/Array/array-method',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/Array/array-method', '0e0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/Built-in Functions/',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/Built-in Functions/', '8f5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/conditional',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/conditional', '567'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/D.O.M/',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/D.O.M/', '411'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/documents/web/Javascript/Basic New/data-type',
                 component: ComponentCreator('/documents/web/Javascript/Basic New/data-type', 'c84'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/function',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/function', 'e22'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/json',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/json', '215'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/loop',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/loop', '274'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/number',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/number', '2dd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/object',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/object', '491'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/operator',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/operator', '505'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/documents/web/Javascript/Basic New/string',
+                component: ComponentCreator('/documents/web/Javascript/Basic New/string', '952'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

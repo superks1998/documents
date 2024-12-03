@@ -71,8 +71,68 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Javascript/Basic New/Array/array",
+              "path": "/documents/web/Javascript/Basic New/Array/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/Array/array-method",
+              "path": "/documents/web/Javascript/Basic New/Array/array-method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/Built-in Functions/Built-in Functions",
+              "path": "/documents/web/Javascript/Basic New/Built-in Functions/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/conditional",
+              "path": "/documents/web/Javascript/Basic New/conditional",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/D.O.M/D.O.M",
+              "path": "/documents/web/Javascript/Basic New/D.O.M/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Javascript/Basic New/data-type",
               "path": "/documents/web/Javascript/Basic New/data-type",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/function",
+              "path": "/documents/web/Javascript/Basic New/function",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/json",
+              "path": "/documents/web/Javascript/Basic New/json",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/loop",
+              "path": "/documents/web/Javascript/Basic New/loop",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/number",
+              "path": "/documents/web/Javascript/Basic New/number",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/object",
+              "path": "/documents/web/Javascript/Basic New/object",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/operator",
+              "path": "/documents/web/Javascript/Basic New/operator",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Javascript/Basic New/string",
+              "path": "/documents/web/Javascript/Basic New/string",
               "sidebar": "tutorialSidebar"
             },
             {
